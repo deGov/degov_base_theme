@@ -422,4 +422,9 @@
       }
     }
   }
+  &.type-2 {
+    .slick-controls {
+      display: none;
+    }
+  }
 }
