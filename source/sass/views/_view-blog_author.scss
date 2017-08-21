@@ -1,0 +1,44 @@
+.block-views-blockblog-author-blog-author {
+  margin: 0 -20px;
+  padding: 20px;
+  color: $brand-primary;
+  background: $nrw-light;
+
+  &:before {
+    content:'\f061';
+    font-family: FontAwesome;
+    color: $color-white;
+    background-color: $brand-primary;
+    min-width: 45px; // To always keep width - responsive
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-right: $padding-base-horizontal + 5;
+  }
+
+  h2 {
+    font-size: $font-size-h3;
+    line-height: 45px;
+    margin-top: 0;
+  }
+
+  p {
+    padding: 20px;
+  }
+
+  .media-person {
+    color: $brand-primary;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .media-person__image {
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
