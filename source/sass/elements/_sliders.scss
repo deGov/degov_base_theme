@@ -326,7 +326,7 @@
         left: 0;
         height: 172px;
         overflow: hidden;
-        @include calc('width', '100% - 384px');
+        @include calc('width', '100% - 400px');
         margin: 0 auto;
         padding: 30px 150px;
         overflow: auto;
@@ -398,8 +398,8 @@
       bottom: 0;
       left: 0;
       z-index: 9;
-      height: 172px;
-      width: 172px;
+      height: auto;
+      width: 306px;
       margin-bottom: 20px;
       margin-left: 20px;
       background-position: center center;
