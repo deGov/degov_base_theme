@@ -20,7 +20,7 @@ function nrw_base_theme_theme_suggestions_input_alter(&$suggestions, &$vars, $ho
  */
 function nrw_base_theme_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   // Add additional attributes to the search page elements.
-  if ($form['#id'] == 'views-exposed-form-search-content-page-1') {
+  if ($form['#id'] == 'views-exposed-form-search-content-page-1' || $form['#id'] == 'views-exposed-form-search-media-manager-page' || $form['#id'] == 'views-exposed-form-search-media-page') {
     $form['actions']['submit']['#attributes']['data-twig-suggestion'] = 'search_results_submit';
     $form['actions']['submit']['#attributes']['class'][] = 'search-box__button';
   }
