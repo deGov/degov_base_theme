@@ -1,7 +1,6 @@
 .media-reference {
   .paragraph__content  {
-    padding-top: 0;
-    padding-bottom: 0;
+    margin: $padding-small-horizontal*-2;
     article.address,
     .document,
     .media-tweet,
