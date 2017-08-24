@@ -1,0 +1,71 @@
+@media print {
+  body .header-wrapper, body .footer-wrapper, body .breadcrumb, body .sharing, body img, body aside, body .tabs, body .contextual, body .tags {
+    display: none; }
+  body a:after {
+    content: '' !important; }
+  body table {
+    border-bottom: 0; }
+  body .header-image__text:after {
+    display: none; }
+  body .slick-dots, body .slick-arrow {
+    display: none !important; }
+  body .slideshow button {
+    display: none !important; }
+  body .slideshow .slick-track {
+    width: 100% !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important; }
+    body .slideshow .slick-track .slide {
+      display: block; }
+      body .slideshow .slick-track .slide.slick-cloned {
+        display: none !important; }
+      body .slideshow .slick-track .slide .slide__text {
+        width: 100%; }
+  body .view-reference .views-row {
+    width: 100% !important; }
+  body .view-reference .view-footer {
+    display: none; }
+  body .block-degov-tweets {
+    display: none; } }
+
+body.print .header-wrapper, body.print .footer-wrapper, body.print .breadcrumb, body.print .sharing, body.print img, body.print aside, body.print .tabs, body.print .contextual, body.print .tags {
+  display: none; }
+
+body.print a:after {
+  content: '' !important; }
+
+body.print table {
+  border-bottom: 0; }
+
+body.print .header-image__text:after {
+  display: none; }
+
+body.print .slick-dots, body.print .slick-arrow {
+  display: none !important; }
+
+body.print .slideshow button {
+  display: none !important; }
+
+body.print .slideshow .slick-track {
+  width: 100% !important;
+  -webkit-transform: none !important;
+  -ms-transform: none !important;
+  transform: none !important; }
+  body.print .slideshow .slick-track .slide {
+    display: block; }
+    body.print .slideshow .slick-track .slide.slick-cloned {
+      display: none !important; }
+    body.print .slideshow .slick-track .slide .slide__text {
+      width: 100%; }
+
+body.print .view-reference .views-row {
+  width: 100% !important; }
+
+body.print .view-reference .view-footer {
+  display: none; }
+
+body.print .block-degov-tweets {
+  display: none; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByaW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtJQUVJLGNBQWUsRUFDaEI7RUFISDtJQU1NLHVCQUF1QixFQUN4QjtFQVBMO0lBVUksaUJBQWlCLEVBQ2xCO0VBWEg7SUFjTSxjQUFjLEVBQ2Y7RUFmTDtJQWtCSSx5QkFBeUIsRUFDMUI7RUFuQkg7SUFzQk0seUJBQXlCLEVBQzFCO0VBdkJMO0lBMEJNLHVCQUF1QjtJQUN2QixtQ0FBMkI7SUFBM0IsK0JBQTJCO0lBQTNCLDJCQUEyQixFQVU1QjtJQXJDTDtNQTZCUSxlQUFlLEVBT2hCO01BcENQO1FBK0JVLHlCQUF5QixFQUMxQjtNQWhDVDtRQWtDVSxZQUFZLEVBQ2I7RUFuQ1Q7SUF5Q00sdUJBQXVCLEVBQ3hCO0VBMUNMO0lBNENNLGNBQWMsRUFDZjtFQTdDTDtJQWdESSxjQUFjLEVBQ2YsRUFBQTs7QUFJTDtFQUVJLGNBQWUsRUFDaEI7O0FBSEg7RUFNTSx1QkFBdUIsRUFDeEI7O0FBUEw7RUFVSSxpQkFBaUIsRUFDbEI7O0FBWEg7RUFjTSxjQUFjLEVBQ2Y7O0FBZkw7RUFrQkkseUJBQXlCLEVBQzFCOztBQW5CSDtFQXNCTSx5QkFBeUIsRUFDMUI7O0FBdkJMO0VBMEJNLHVCQUF1QjtFQUN2QixtQ0FBMkI7RUFBM0IsK0JBQTJCO0VBQTNCLDJCQUEyQixFQVU1QjtFQXJDTDtJQTZCUSxlQUFlLEVBT2hCO0lBcENQO01BK0JVLHlCQUF5QixFQUMxQjtJQWhDVDtNQWtDVSxZQUFZLEVBQ2I7O0FBbkNUO0VBeUNNLHVCQUF1QixFQUN4Qjs7QUExQ0w7RUE0Q00sY0FBYyxFQUNmOztBQTdDTDtFQWdESSxjQUFjLEVBQ2YiLCJmaWxlIjoicHJpbnQuY3NzIiwic291cmNlUm9vdCI6Ii4uLy4uL3NvdXJjZS9zYXNzIn0= */
