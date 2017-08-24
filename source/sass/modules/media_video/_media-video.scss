@@ -69,3 +69,26 @@
     display: none;
   }
 }
+
+// For view mode preview
+.media--preview.video {
+  margin-left: 0;
+  margin-right: 0;
+}
+.media--preview {
+  .video__video {
+    margin-bottom: $padding-base-vertical;
+  }
+  .video__info {
+    position: static;
+    color: $brand-primary;
+    padding: 0 $padding-xs-horizontal;
+    text-align: left;
+    font-size: $font-size-base;
+  }
+  .video__caption {
+    float: none;
+    padding: 0;
+    font-size: $font-size-base;
+  }
+}
