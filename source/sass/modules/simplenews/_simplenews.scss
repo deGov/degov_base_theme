@@ -1,0 +1,45 @@
+.block-simplenews {
+  .form-item-message {
+    margin-bottom: $padding-large-vertical;
+  }
+  input {
+    max-width: 25em;
+    background: $nrw-light;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    &:focus {
+      box-shadow: none;
+      outline: $nrw-primary auto 5px;
+    }
+  }
+  .form-submit {
+    color: $brand-primary;
+    font-size: $font-size-small;
+    font-weight: bold;
+    border: none;
+    padding: $padding-xs-horizontal;
+    &:after {
+      display: inline-block;
+      content: '';
+      padding: $padding-base-vertical*3 $padding-base-horizontal;
+      margin-left: $padding-small-horizontal;
+      vertical-align: middle;
+    }
+    &:hover,
+    &:active {
+      background: transparent;
+    }
+  }
+  #edit-subscribe {
+    &:after {
+      background: $brand-success url(../images/kontakt.png) no-repeat center center;
+    }
+  }
+}
+
+.region-sidebar-second .block-simplenews {
+  .form-actions {
+    text-align: right;
+  }
+}
