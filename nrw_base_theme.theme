@@ -25,3 +25,22 @@ function nrw_base_theme_form_alter(&$form, \Drupal\Core\Form\FormStateInterface 
     $form['actions']['submit']['#attributes']['class'][] = 'search-box__button';
   }
 }
+
+/**
+ * Implements hook_preprocess_html()
+ * @param $vars
+ */
+function nrw_base_theme_preprocess_html(&$vars) {
+  if (isset($_GET['print'])) {
+    //echo $_GET['print'];
+    $vars['print'] = "print";
+  }
+}
+
+/**
+ * Implements hook_preprocess_page()
+ * @param $variables
+ */
+function nrw_base_theme_preprocess_page(&$variables){
+  //kint($variables['#attached']);
+}
