@@ -1,0 +1,15 @@
+// SCSS for view search media
+.view-search-media {
+  margin-top: $grid-gutter-width/2;
+  margin-right: -$grid-gutter-width/2;
+  margin-left: -$grid-gutter-width/2;
+
+  article {
+    background-color: $nrw-light;
+  }
+}
+
+.pager {
+  margin-left: $grid-gutter-width/2;
+  margin-right: $grid-gutter-width/2;
+}
