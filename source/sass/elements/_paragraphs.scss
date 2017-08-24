@@ -18,7 +18,7 @@ div[class*="__header-paragraphs"] .paragraph a {
 	margin: 0 -20px;
 	padding: 20px;
 	background: $nrw-light;
-	
+
 	@include smaller-than($screen-xs-max){
 		word-break: break-all;
 	}
@@ -95,6 +95,15 @@ div[class*="__header-paragraphs"] .paragraph a {
 		.sharing{
 			margin-top: $grid-gutter-width/3;
 		}
+	}
+}
+
+.region-sidebar-second {
+	.paragraph__content {
+		padding-top: 0;
+	}
+	.paragraph.text .paragraph__content {
+		padding-top: $padding-large-vertical*2;
 	}
 }
 
