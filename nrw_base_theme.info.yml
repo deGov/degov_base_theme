@@ -16,3 +16,4 @@ libraries:
   - 'nrw_base_theme/theme-assets'
   - 'nrw_base_theme/photoswipe'
   - 'nrw_base_theme/selectize'
+  - 'nrw_base_theme/shariff-2click'

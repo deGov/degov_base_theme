@@ -1,0 +1,105 @@
+@media print{
+  body{
+    .header-wrapper, .footer-wrapper, .breadcrumb, .sharing ,img, aside , .tabs, .contextual, .tags{
+      display: none ;
+    }
+    a{
+      &:after{
+        content: '' !important;
+      }
+    }
+    table{
+      border-bottom: 0;
+    }
+    .header-image__text{
+      &:after{
+        display: none;
+      }
+    }
+    .slick-dots, .slick-arrow{
+      display: none !important;
+    }
+    .slideshow {
+      button{
+        display: none !important;
+      }
+      .slick-track{
+
+        width: 100% !important;
+        transform: none !important;
+        .slide{
+          display: block;
+          &.slick-cloned{
+            display: none !important;
+          }
+          .slide__text{
+            width: 100%;
+          }
+        }
+      }
+    }
+    .view-reference {
+      .views-row{
+        width: 100% !important;
+      }
+      .view-footer{
+        display: none;
+      }
+    }
+    .block-degov-tweets{
+      display: none;
+    }
+  }
+}
+
+body.print{
+  .header-wrapper, .footer-wrapper, .breadcrumb, .sharing ,img, aside , .tabs, .contextual, .tags{
+    display: none ;
+  }
+  a{
+    &:after{
+      content: '' !important;
+    }
+  }
+  table{
+    border-bottom: 0;
+  }
+  .header-image__text{
+    &:after{
+      display: none;
+    }
+  }
+  .slick-dots, .slick-arrow{
+    display: none !important;
+  }
+  .slideshow {
+    button{
+      display: none !important;
+    }
+    .slick-track{
+
+      width: 100% !important;
+      transform: none !important;
+      .slide{
+        display: block;
+        &.slick-cloned{
+          display: none !important;
+        }
+        .slide__text{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .view-reference {
+    .views-row{
+      width: 100% !important;
+    }
+    .view-footer{
+      display: none;
+    }
+  }
+  .block-degov-tweets{
+    display: none;
+  }
+}

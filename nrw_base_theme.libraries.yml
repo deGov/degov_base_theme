@@ -3,6 +3,7 @@ theme-assets:
     theme:
       public/css/bootstrap.css: {}
       public/css/style.css: {}
+      public/css/print.css: {}
   js:
     public/js/bundle.js: {}
 
@@ -20,3 +21,11 @@ selectize:
       https://cdn.jsdelivr.net/jquery.selectric/1.11.1/selectric.css: { type: external, minified: true }
   js:
     https://cdn.jsdelivr.net/jquery.selectric/1.11.1/jquery.selectric.min.js: { type: external, minified: true }
+
+shariff-2click:
+  js:
+    js/shariff-2click.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
