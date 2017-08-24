@@ -13,27 +13,42 @@
       outline: $nrw-primary auto 5px;
     }
   }
+  #edit-subscribe {
+    @include icon-after($fa-var-paper-plane, $padding-small-horizontal);
+    &:after {
+      background: $brand-success;
+    }
+  }
+  #edit-unsubscribe {
+    @include icon-after($fa-var-times, $padding-small-horizontal);
+    &:after {
+      background: $brand-primary;
+    }
+  }
+  #edit-subscribe,
+  #edit-unsubscribe {
+    &:after {
+      font-size: $font-size-h2;
+      vertical-align: middle;
+    }
+  }
   .form-submit {
     color: $brand-primary;
     font-size: $font-size-small;
     font-weight: bold;
     border: none;
-    padding: $padding-xs-horizontal;
+    padding-right: $padding-xs-horizontal;
+    padding-left: 0;
     &:after {
-      display: inline-block;
-      content: '';
-      padding: $padding-base-vertical*3 $padding-base-horizontal;
-      margin-left: $padding-small-horizontal;
-      vertical-align: middle;
+      color: $color-white;
+      padding: $padding-large-horizontal/2;
     }
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       background: transparent;
-    }
-  }
-  #edit-subscribe {
-    &:after {
-      background: $brand-success url(../images/kontakt.png) no-repeat center center;
+      box-shadow: none;
+      text-decoration: underline;
     }
   }
 }
