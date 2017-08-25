@@ -1,6 +1,7 @@
 .block-views-blockblog-author-blog-author {
-  margin: 0 -20px;
-  padding: 20px;
+  margin: 0 -$padding-large-vertical*2;
+  padding: $padding-large-vertical*2;
+  padding-bottom: 0;
   color: $brand-primary;
   background: $nrw-light;
 
