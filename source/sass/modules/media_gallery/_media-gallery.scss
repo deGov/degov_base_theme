@@ -46,27 +46,7 @@
 }
 
 // For view mode preview
-.media--preview.media-gallery {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 .media--preview {
-  .gallery__type-text {
-    position: absolute;
-    left: $grid-gutter-width/2;
-    top: $vertical-gutter-width/2;
-    z-index: 1;
-    font-size: $font-size-small;
-    line-height: $font-size-small;
-    font-weight: bold;
-    background: $brand-primary;
-    padding: $padding-xs-vertical*3 $padding-small-horizontal;
-    color: $color-white;
-  }
-  .gallery__images {
-    margin-bottom: $padding-base-vertical;
-  }
   .gallery__title {
     color: $brand-primary;
     padding: 0 $padding-xs-horizontal;

@@ -54,47 +54,14 @@
 
 // For view mode preview
 .media--preview {
-  margin-bottom: $grid-gutter-width/2;
   .image__image {
     position: relative;
-    margin-bottom: $padding-base-vertical;
-  }
-  .image__type-text {
-    position: absolute;
-    left: $grid-gutter-width/2;
-    top: $vertical-gutter-width/2;
-    z-index: 1;
-    font-size: $font-size-small;
-    line-height: $font-size-small;
-    font-weight: bold;
-    background: $brand-primary;
-    padding: $padding-xs-vertical*3 $padding-small-horizontal;
-  }
-  .image__info {
-    position: static;
-    color: $brand-primary;
-    padding: 0 $padding-xs-horizontal;
-    text-align: left;
-    font-size: $font-size-base;
-  }
-  .image__caption {
-    float: none;
-    padding: 0;
-    font-size: $font-size-base;
-
   }
   .image__date {
     padding-right: $padding-base-vertical;
     &:after {
       content: "/";
       padding-left: $padding-xs-horizontal;
-    }
-  }
-  .image__copyright {
-    font-size: $font-size-base;
-    &:before {
-      content: "/";
-      padding-left: 0;
     }
   }
 }
