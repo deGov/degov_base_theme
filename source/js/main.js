@@ -73,7 +73,7 @@ const PhotoSwipeUiDefault = require('photoswipe/dist/photoswipe-ui-default');
         window.location.href = '/suche?volltext=' + value;
       });
       $(document).once('press-enter').keypress(function (e) {
-        if (e.which == 13) {
+        if (e.which === 13) {
           const value = $('input.nrw-menu-header__search-text').val();
           window.location.href = '/suche?volltext=' + value;
         }

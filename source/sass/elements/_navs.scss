@@ -352,12 +352,16 @@
     a[href*=delete] {
       @include icon($fa-var-trash-o);
     }
+    a[href*=config] {
+      @include icon($fa-var-cogs);
+    }
     a[href*=revisions] {
       @include icon($fa-var-list-ol);
     }
     &:first-child a,
     a[href*=edit],
     a[href*=delete],
+    a[href*=config],
     a[href*=revisions] {
       display: block;
       width: $font-size-h1;
