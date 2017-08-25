@@ -20,5 +20,21 @@
   li {
     font-size: $font-size-base;
     color: $brand-primary;
+    list-style-type: none;
+  }
+  span {
+    font-weight: bold;
+    &:before {
+      content: '';
+    }
+  }
+  a {
+    @include icon-before('\f061');
+    &:before {
+      font-size: $font-size-small;
+      top: -2px;
+      position: relative;
+      margin-right: 0.5em;
+    }
   }
 }
