@@ -4,6 +4,8 @@
  * Bootstrap sub-theme for nrwGov.
  */
 
+use Drupal\Core\Url;
+
 /**
  * Implements hook_theme_suggestion_input_alter().
  */
@@ -24,4 +26,40 @@ function nrw_base_theme_form_alter(&$form, \Drupal\Core\Form\FormStateInterface 
     $form['actions']['submit']['#attributes']['data-twig-suggestion'] = 'search_results_submit';
     $form['actions']['submit']['#attributes']['class'][] = 'search-box__button';
   }
+}
+
+/**
+ * Implements hook_preprocess_links__HOOK().
+ */
+function nrw_base_theme_preprocess_links__language_block(&$variables) {
+  $variables['current_language'] = \Drupal::languageManager()->getCurrentLanguage()->getId();
+
+  foreach ($variables['links'] as $key => $item) {
+    $variables['links'][$key]['link']['#title'] = $key;
+    $variables['links'][$key]['link']['#options']['attributes']['rel'] = $key;
+
+    if ($key !== $variables['current_language']) {
+      $variables['links'][$key]['link']['#url'] = Url::fromRoute('<front>', [], ['language' => $key]);
+    }
+  }
+}
+
+/**
+* Implements hook_preprocess_html()
+* @param $vars
+*/
+function nrw_base_theme_preprocess_html(&$vars) {
+  if (isset($_GET['print'])) {
+    //echo $_GET['print'];
+    $vars['print'] = "print";
+  }
+}
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function nrw_base_theme_preprocess_page(&$variables) {
+  $variables['language_block'] = \Drupal::service('plugin.manager.block')
+    ->createInstance('language_block:language_interface')
+    ->build();
 }
