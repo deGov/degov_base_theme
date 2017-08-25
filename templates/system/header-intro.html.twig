@@ -20,7 +20,10 @@
                          <li class="first"><a href="/user/login" title="Anmelden / Registrieren" class="login">{% trans %}Anmelden / Registrieren{% endtrans %}</a></li>  
                     {% endif %}
                    
-                    <li class="last"><a href="/servicecenter/kontakt" title="Kontakt" class="kontakt">Kontakt</a></li>
+                    <li><a href="/servicecenter/kontakt" title="Kontakt" class="kontakt">Kontakt</a></li>
+                    {% if social_media_settings %}
+                        <li class="last"><a href="#">{{ '"Social Media"-Settings'|trans }}</a></li>
+                    {% endif %}
                 </ul>
             </nav>
         </div>
