@@ -107,7 +107,7 @@
 					width: 100%;
 					float: left;
 					min-height: auto;
-					padding: 0;
+					padding: 0 $grid-gutter-width/2;
 					.right{
 						float: left;
 						ul{
@@ -119,11 +119,16 @@
 						width: 100%;
 						li{
 							width: 100%;
-							border-bottom: 1px solid $brand-primary;
-							padding: $grid-gutter-width/4 0;
-							a,a.gebaerdensprache, a.leichtesprache,a.login, a.kontakt{  padding: 10px 20px 5px 20px;
+							border-bottom: 1px solid $nrw-light;
+							a,
+							a.gebaerdensprache,
+							a.leichtesprache,
+							a.login,
+							a.kontakt{
+								padding: $grid-gutter-width/4 0;
 								background: none;
 								font-weight: normal;
+								display: block;
 							}
 						}
 					}
@@ -138,7 +143,7 @@
 				float: right;
 			}
 			@media(max-width: $screen-sm-min){
-				top: 40px;
+				z-index: 1;
 				background: $color-white;
 				display: none;
 				label{
@@ -152,11 +157,14 @@
 			display: none;
 			position: relative;
 			text-align: center;
-  		padding: $grid-gutter-width/3.07;
+  		padding: $grid-gutter-width/2;
   		position: relative;
 			width: 100%;
+			font-size: $font-size-small;
 			i{
 				margin-left: $grid-gutter-width/4;
+				font-size: $font-size-h6;
+				font-weight: bold;
 			}
 			@media(max-width: $screen-sm-min){
 				display: block ;
@@ -173,12 +181,11 @@
 			}
 		}
 		&.is-open{
-			min-height: 255px;
+			background-color: $color-white;
 			i{
 				transform: rotate(180deg);
 			}
 			.header__upper-menu--elements{
-
 				display: block;
 			}
 		}

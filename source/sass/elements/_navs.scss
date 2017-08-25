@@ -352,12 +352,16 @@
     a[href*=delete] {
       @include icon($fa-var-trash-o);
     }
+    a[href*=config] {
+      @include icon($fa-var-cogs);
+    }
     a[href*=revisions] {
       @include icon($fa-var-list-ol);
     }
     &:first-child a,
     a[href*=edit],
     a[href*=delete],
+    a[href*=config],
     a[href*=revisions] {
       display: block;
       width: $font-size-h1;
@@ -407,10 +411,13 @@
   }
   i{
     font-weight: normal;
-    margin-right: $padding-xs-horizontal;
+    margin-right: $padding-small-horizontal;
+    &:before {
+      color: $brand-primary;
+    }
   }
-  i:before {
-    color: $brand-primary;
+  .fa-angle-down {
+    margin-right: 0;
   }
   &__title,
   &__list,
@@ -427,29 +434,33 @@
   &__block-title{
     font-size: $font-size-h2;
     text-transform: uppercase;
-    span{
+    a{
       font-size: $font-size-small;
-      vertical-align: text-top;
+      vertical-align: middle;
       line-height: $font-size-h2 + 6;
     }
     .fa-angle-down {
       font-size: $font-size-h6;
+      font-weight: bold;
     }
   }
+  &__block > &__block-title {
+    border-top: 1px solid $nrw-light;
+    padding: $padding-large-vertical 0;
+  }
+  &__block-title, &__title{
+    line-height: $font-size-h1;
+  }
   &__list{
+    padding-left: $padding-small-horizontal*2;
+    margin-bottom: 0;
     i{
       margin-right: $grid-gutter-width/8;
     }
   }
-  &__block-title, &__title{
-    padding-bottom: 1px;
-    border-bottom: 1px solid $color-white;
-    line-height: $font-size-h1;
-  }
   &__block {
     padding-top: $vertical-gutter-width/4;
     padding-bottom: $vertical-gutter-width/4;
-    border-top: 1px solid $nrw-light;
   }
   &__block--search {
     border-top: none;
@@ -500,13 +511,14 @@
     }
   }
   &__content {
-    padding-left: $grid-gutter-width/2;
+    padding-left: $grid-gutter-width*0.7  ;
     &.is-close{
       display: none;
     }
     a{
       i{
         margin-right: $grid-gutter-width/8;
+        font-size: $font-size-extra-small;
       }
     }
   }
@@ -516,15 +528,28 @@
     padding: $padding-base-vertical*2 $padding-base-horizontal;
     cursor: pointer;
   }
+  &__third-level {
+    text-transform: none;
+  }
   &.is-open{
     display: block;
+    position: absolute;
+    margin-top: -2px;
+    z-index: 1;
+    width: 90%;
+    background: $color-white;
+    box-shadow: 3px 5px 5px $gray-base;
   }
 }
 
 .header__menu-icon{
   display: none;
+  transform: opacity 0.3s;
   @media(max-width: $screen-sm){
     display: block;
+  }
+  &.is-open {
+    opacity: 0.5;
   }
   i,
   span {
