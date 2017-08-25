@@ -99,11 +99,10 @@ div[class*="__header-paragraphs"] .paragraph a {
 }
 
 .region-sidebar-second {
-	.paragraph__content {
-		padding-top: 0;
-	}
-	.paragraph.text .paragraph__content {
-		padding-top: $padding-large-vertical*2;
+	.downloads {
+		.paragraph__content {
+			padding-top: 0;
+		}
 	}
 }
 
