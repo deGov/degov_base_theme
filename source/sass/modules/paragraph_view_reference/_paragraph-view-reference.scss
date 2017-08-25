@@ -22,3 +22,25 @@
     }
   }
 }
+
+.region-sidebar-second {
+  .view-reference .event.default {
+    @include make-sm-column(12);
+  }
+  .view-header .paragraph__header {
+    word-break: break-all;
+    &.paragraph__header-right {
+      clear: both;
+      width: auto;
+      display: flex;
+      i {
+        float: left;
+        margin-right: $grid-gutter-width/2;
+        margin-left: 0;
+      }
+      h2 {
+        float: none;
+      }
+    }
+  }
+}
