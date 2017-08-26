@@ -59,6 +59,29 @@
  */
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
+{# Social media settings #}
+{% if social_media_settings %}
+  <div id="social-media-settings" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">{{ 'Social Media Settings'|trans }}</h4>
+        </div>
+        <div class="modal-body">
+          <ul>
+          {% for key, name in social_media_sources %}
+            <li><label><input type="checkbox" value="{{ key }}">{{ name }}</label></li>
+          {% endfor %}
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">{{ 'Cancel'|trans }}</button>
+          <button type="button" class="js-social-media-settings-save btn btn-default" data-dismiss="modal">{{ 'Save'|trans }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
 {# Navbar #}
 <div class="header-wrapper">
   <header class="header {{ container }}">
