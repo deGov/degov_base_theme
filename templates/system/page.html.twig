@@ -69,8 +69,9 @@
         </div>
         <div class="modal-body">
           <ul>
+            <li><label><input class="js-social-media-source-all" type="checkbox" value="all">{{ 'Alle'|trans }}</label></li>
           {% for key, name in social_media_sources %}
-            <li><label><input type="checkbox" value="{{ key }}">{{ name }}</label></li>
+            <li><label><input class="js-social-media-source" type="checkbox" value="{{ key }}">{{ name }}</label></li>
           {% endfor %}
           </ul>
         </div>
