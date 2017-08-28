@@ -3,24 +3,24 @@
     padding: $padding-large-vertical $padding-large-vertical*2 $padding-base-vertical $padding-large-vertical*2;
     -webkit-font-smoothing: antialiased;
     @media(max-width: $screen-sm-min){
-      border-bottom: 1px solid $brand-primary;
       display: flex;
       width: 100%;
     }
     select{
-        text-transform: uppercase;
-        display: none;
+      text-transform: uppercase;
+      display: none;
     }
     label{
       @media(max-width: $screen-sm-min){
-          float: left;
-          padding-right: $grid-gutter-width/4;
+        float: left;
+        padding-right: $grid-gutter-width/4;
       }
     }
     .selector{
       padding-right:  $padding-large-vertical*1.5;
       @media(max-width: $screen-sm-min){
         flex: 1;
+        padding-right: 0;
         i{
           float: right;
           font-weight: bold;
@@ -42,34 +42,40 @@
       list-style: none;
       padding: 0;
       background: $brand-primary;
-      @media(max-width: $screen-sm-min){
-          left: 0;
-          top: 43px;
-          width: 100%;
-          li{
-            border-bottom: 1px solid $color-white;;
-            a{
-              color: $color-white;
-            }
-          }
+      li{
+        padding: $padding-large-vertical/2 $padding-large-vertical;
+        a{
+          font-size: $font-size-base - 6;
         }
-       li{
-          padding: $padding-large-vertical/2 $padding-large-vertical;
-          a{
-            font-size: $font-size-base - 6;
-          }
-        }
+      }
       &.is-hidden{
         opacity: 0;
-        transition: opacity 1s, visibility 1.3s;
+        transition: opacity 0.5s, visibility 0.8s;
         z-index: -10;
       }
       &.is-open{
         visibility:visible;
         opacity: 1;
-        transition: opacity 1s, visibility 1.3s;
+        //transition: opacity 0.5s, visibility 0.8s;
         @media(max-width: $screen-sm-min){
-          padding: 0 10px;
+          padding: 0 $padding-small-horizontal;
+          margin: 0 $padding-small-horizontal*2;
+        }
+      }
+      @media(max-width: $screen-sm-min){
+        left: 0;
+        right: 0;
+        top: 43px;
+        li{
+          border-bottom: 1px solid $color-white;
+          &:last-child {
+            border-bottom: none;
+          }
+          a{
+            color: $color-white;
+            font-size: $font-size-h6;
+            font-weight: normal;
+          }
         }
       }
     }
@@ -310,22 +316,22 @@
       }
     }
     > .nrw-menu__list{
+      list-style: none;
+      float: left;
+      background-image: url(../images/menus.png);
+      min-height: 210px;
+      width: 75%;
+      padding: $padding-base-horizontal $padding-base-horizontal*3.6;
+      margin-bottom: $padding-base-horizontal*5;
+      ul{
         list-style: none;
-        float: left;
-        background-image: url(../images/menus.png);
-        min-height: 210px;
-        width: 75%;
-        padding: $padding-base-horizontal $padding-base-horizontal*3.6;
-        margin-bottom: $padding-base-horizontal*5;
-        ul{
-          list-style: none;
-        }
-        a{
-            @include icon-before('\f061');
-            font-size: $font-size-base - 4;
-            text-transform: initial;
-          }
       }
+      a{
+        @include icon-before('\f061');
+        font-size: $font-size-base - 4;
+        text-transform: initial;
+      }
+    }
 
     &.is-expanded{
       display: block;
@@ -419,13 +425,13 @@
   &__list,
   &__block-title,
   &__block--social-media {
-      font-size: $font-size-small;
-      vertical-align: text-top;
-      line-height: $font-size-h2 + 6;
-      text-transform: uppercase;
-      i.is-open{
-        transform: rotate(180deg);
-      }
+    font-size: $font-size-small;
+    vertical-align: text-top;
+    line-height: $font-size-h2 + 6;
+    text-transform: uppercase;
+    i.is-open{
+      transform: rotate(180deg);
+    }
   }
   &__block-title{
     font-size: $font-size-h2;
@@ -531,7 +537,7 @@
     display: block;
     position: absolute;
     margin-top: -2px;
-    z-index: 1;
+    z-index: 10;
     width: 90%;
     background: $color-white;
     box-shadow: 3px 5px 5px $gray-base;

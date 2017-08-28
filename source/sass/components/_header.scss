@@ -108,6 +108,9 @@
 					float: left;
 					min-height: auto;
 					padding: 0 $grid-gutter-width/2;
+					#service-menu li:first-child {
+						border-top: 1px solid $nrw-light;
+					}
 					.right{
 						float: left;
 						ul{
