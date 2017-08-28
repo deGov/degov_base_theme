@@ -4,7 +4,7 @@
       font-size: 54px;
       line-height: 54px;
       color: $brand-primary;
-    } 
+    }
     &__day-of-week{
       font-weight: bold;
       color: $brand-primary;
@@ -137,6 +137,38 @@
     padding: 12px 0;
     @include smaller-than($screen-desktop) {
       @include calc('width', '100% - 90px');
+    }
+  }
+}
+
+.region-sidebar-second {
+  .view-reference .event {
+    &,
+    .event__teaser-content {
+      @include make-sm-column(12);
+    }
+    & {
+      padding: 0;
+    }
+    &.long-text,
+    &.slim,
+    &.preview {
+      .event__teaser-image {
+        @include make-sm-column(12);
+        padding: 0;
+        &:after{
+          @include triangle-up($color-white);
+          top: auto;
+          bottom: 0;
+          left: auto;
+          right: $padding-base-horizontal;
+        }
+      }
+    }
+    &.small-image {
+      .event__teaser-image {
+        @include make-sm-column(6);
+      }
     }
   }
 }

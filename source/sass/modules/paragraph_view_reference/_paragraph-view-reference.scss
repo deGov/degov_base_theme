@@ -24,8 +24,11 @@
 }
 
 .region-sidebar-second {
-  .view-reference .event.default {
-    @include make-sm-column(12);
+  .view-content {
+    margin: 0;
+  }
+  .paragraph__content {
+    padding-top: 0;
   }
   .view-header .paragraph__header {
     word-break: break-all;
