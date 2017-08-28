@@ -1,0 +1,25 @@
+// For view mode media default
+.audio--default {
+  margin-top: 0;
+  margin-left: -$vertical-gutter-width/2;
+  margin-right: -$vertical-gutter-width/2;
+  color: $color-white;
+  background-color: $nrw-secondary;
+  padding-bottom: $vertical-gutter-width/2;
+
+  img, audio {
+    width: 100%;
+  }
+
+  .audio__audio {
+    line-height: 1;
+  }
+
+  .audio__info {
+    padding: $vertical-gutter-width/2;
+  }
+
+  .tags {
+    margin: 0 $vertical-gutter-width/2;
+  }
+}
