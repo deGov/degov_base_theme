@@ -63,3 +63,7 @@ function nrw_base_theme_preprocess_page(&$variables) {
     ->createInstance('language_block:language_interface')
     ->build();
 }
+
+function nrw_preprocess_swiftmailer(&$variables) {
+  $variables['mail_date'] = time();
+}
