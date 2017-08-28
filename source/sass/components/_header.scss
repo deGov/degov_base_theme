@@ -146,8 +146,9 @@
 				float: right;
 			}
 			@media(max-width: $screen-sm-min){
-				z-index: 1;
+				z-index: 11;
 				background: $color-white;
+				box-shadow: 0 5px 5px $gray-base;
 				display: none;
 				label{
 					color: $brand-primary;
