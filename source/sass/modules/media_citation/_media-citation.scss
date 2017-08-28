@@ -1,11 +1,8 @@
 .citation {
   color: $brand-primary;
-  margin: 0 -1*($grid-gutter-width/2);
-  .row {
-    @include smaller-than($screen-xs-max) {
-      display: flex;
-      flex-direction: column;
-    }
+  @include smaller-than($screen-xs-max) {
+    display: flex;
+    flex-direction: column;
   }
   &__left {
     padding: $vertical-gutter-width $padding-small-horizontal*5;
@@ -73,4 +70,25 @@
       right: 0;
     }
   }
+}
+
+.region-sidebar-second .citation {
+  display: flex;
+  flex-direction: column;
+  .citation__left,
+  .citation__right {
+    @include make-sm-column(12);
+  }
+  .citation__right {
+    padding: 0;
+    order: -1;
+  }
+  .citation__left:after {
+    @include triangle-up($color: $color-white);
+    right: auto;
+    right: 20px;
+    top: -30px;
+  }
+
+
 }
