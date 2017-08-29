@@ -15,13 +15,7 @@
 }
 
 .region-sidebar-second .media-reference {
-  .media-image,
-  .media-video,
-  .media-video-upload,
-  .media-person,
-  .media-contact {
-    .paragraph__content {
-      margin: 0 $grid-gutter-width/-2;
-    }
+  .paragraph__content {
+    margin: 0 $grid-gutter-width/-2;
   }
 }
