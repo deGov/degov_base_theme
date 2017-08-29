@@ -23,9 +23,78 @@
   }
 }
 
+.region-content .view-reference {
+  .views-row.long-text {
+    &:nth-child(odd){
+      article.long-text:nth-child(odd),
+      article.long-text:nth-child(even) {
+        .teaser-image{
+          float: right;
+          &:after{
+            @include triangle-right($color-white);
+            top: 15px;
+          }
+        }
+      }
+    }
+    &:nth-child(even){
+      article.long-text:nth-child(odd),
+      article.long-text:nth-child(even) {
+        .teaser-image{
+          float: left;
+          &:after{
+            @include triangle-left($color-white);
+            border-left: none;
+            top: 15px;
+            right: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .views-row.preview,
+  .views-row.slim {
+    &:nth-child(4n-2),&:nth-child(4n-3){
+      article.preview,
+      article.slim {
+        &:nth-child(odd),
+        &:nth-child(even) {
+          .teaser-image{
+            float: left;
+            &:after{
+              @include triangle-left($color-white);
+              top: 15px;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+    &:nth-child(4n-1),&:nth-child(4n){
+      article.preview,
+      article.slim {
+        &:nth-child(odd),
+        &:nth-child(even) {
+          .teaser-image{
+            float: right;
+            &:after{
+              @include triangle-right($color-white);
+              border-right: none;
+              top: 15px;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .region-sidebar-second {
   .view-content {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .paragraph__content {
     padding-top: 0;
