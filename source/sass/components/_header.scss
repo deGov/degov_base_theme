@@ -108,6 +108,9 @@
 					float: left;
 					min-height: auto;
 					padding: 0 $grid-gutter-width/2;
+					#service-menu li:first-child {
+						border-top: 1px solid $nrw-light;
+					}
 					.right{
 						float: left;
 						ul{
@@ -143,8 +146,9 @@
 				float: right;
 			}
 			@media(max-width: $screen-sm-min){
-				z-index: 1;
+				z-index: 11;
 				background: $color-white;
+				box-shadow: 0 5px 5px $gray-base;
 				display: none;
 				label{
 					color: $brand-primary;

@@ -10,7 +10,7 @@ article.long-text {
   }
   &:nth-child(odd){
     .teaser-image{
-      float: right;      
+      float: right;
       &:after{
         @include triangle-right($color-white);
         top: 15px;
@@ -18,7 +18,7 @@ article.long-text {
     }
   }
   &:nth-child(even){
-    .teaser-image{  
+    .teaser-image{
       &:after{
         @include triangle-left($color-white);
         top: 15px;
@@ -28,34 +28,8 @@ article.long-text {
   }
 }
 
-
-/*
-
-
-article.long-text {
-  border-bottom: 1px solid #dde6f0;
-  &:nth-child(4n-1), &:nth-child(4n){
-    .teaser-image{
-      float: right;      
-      &:after{
-        @include triangle-right($color-white);
-        top: 15px;
-      }
-    }
-  }
-  &:nth-child(4n-3), &:nth-child(4n-2){
-    .teaser-image{  
-      &:after{
-        @include triangle-left($color-white);
-        top: 15px;
-        right: 20px;
-      }
-    }
-  }
-}
-
-*/
-article.preview{
+article.preview,
+article.slim {
   padding: 0;
   .teaser-image{
     padding: 0;
@@ -88,37 +62,13 @@ article.preview{
   }
 }
 
-.slim{
-  .teaser-image{
-    padding: 0;
-  }
+article.slim{
   .teaser-content{
     padding: $grid-gutter-width/2;
-    h3{
-      font-weight: bold;
-    }
-  }
-  &:nth-child(odd){
-    .teaser-image{
-      float: right;      
-      &:after{
-        @include triangle-right($color-white);
-        top: 15px;
-      }
-    }
-  }
-  &:nth-child(even){
-    .teaser-image{  
-      &:after{
-        @include triangle-left($color-white);
-        top: 15px;
-        right: 0px;
-      }
-    }
   }
 }
 
-.small-image{
+article.small-image{
   border-bottom: 1px solid #dde6f0;
   .teaser-image{
     padding: $grid-gutter-width/2;
@@ -129,5 +79,5 @@ article.preview{
       font-weight: bold;
     }
   }
-  
+
 }

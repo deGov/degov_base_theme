@@ -4,7 +4,8 @@
     padding-top: $grid-gutter-width/2;
     max-height: none;
   }
-  &.preview {
+  &.preview,
+  &.slim {
     @include make-sm-column(12);
     padding: 0 0 $grid-gutter-width/2 0;
   }
