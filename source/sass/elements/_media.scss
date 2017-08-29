@@ -1,0 +1,13 @@
+.media {
+  margin: 0 $grid-gutter-width/-2;
+}
+
+
+.media-address,
+.media-document,
+.media-tweet,
+.media-instagram,
+.media-some-embed {
+  padding: $grid-gutter-width/2;
+}
+

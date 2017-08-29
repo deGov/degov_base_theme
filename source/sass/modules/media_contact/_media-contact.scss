@@ -8,7 +8,7 @@
     background-color: $brand-primary;
     color: $color-white;
     &__position{
-       
+
     }
     &__title{
         font-weight: bold;
@@ -40,7 +40,7 @@ aside{
 }
 .region-content{
     .media-contact{
-        padding: 0 $grid-gutter-width/2 $grid-gutter-width/2 $grid-gutter-width/2;
+        padding: $grid-gutter-width/2;
         background-color: $color-white;
         color: $text-color;
         margin: $grid-gutter-width/2 -1*($grid-gutter-width/2) 0;
@@ -63,11 +63,11 @@ aside{
             flex-direction: column;
             justify-content: center;
             align-self: center;
-            @include make-md-column(9);         
+            @include make-md-column(9);
             a{
                 color: $brand-primary;
-                
+
             }
-        } 
-    }   
+        }
+    }
 }
