@@ -1,1 +1,30 @@
 //block style is here
+
+// For block title in sidebar second
+.region-sidebar-second {
+  .block-title {
+    font-size: $font-size-h2;
+    line-height: 1;
+    margin: 0;
+    padding: $grid-gutter-width/2;
+    display: inline-block;
+    color: $brand-primary;
+    background-color: $nrw-light;
+    width: 100%;
+
+    &:before {
+      content: '\f061';
+      font-family: FontAwesome;
+      color: $color-white;
+      background-color: $brand-primary;
+      min-width: 45px; // To always keep width - responsive
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: left;
+      margin-right: $padding-base-horizontal + 5;
+    }
+  }
+}
