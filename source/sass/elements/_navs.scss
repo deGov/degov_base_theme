@@ -116,7 +116,13 @@
           &.kontakt {
             background: url(../images/kontakt.png) no-repeat scroll right 10px transparent;
           }
-
+          &.social-media-settings--menu-item {
+            i:before {
+              font-size: $font-size-h6;
+              line-height: $font-size-extra-small;
+              margin-left: $padding-large-horizontal/2;
+            }
+          }
         }
       }
     }
@@ -614,5 +620,34 @@
     text-transform: uppercase;
     font-weight: bold;
 
+  }
+}
+
+// Sidebar menu - Min menu fourth level and deeper
+.nrw-menu-sidebar-sub {
+  margin-top: $grid-gutter-width/2;
+  &__menu-list {
+    list-style-type: none;
+    font-size: $font-size-small;
+    i {
+      margin-right: $padding-xs-horizontal;
+      &:before {
+        font-size: $font-size-extra-small;
+      }
+    }
+    &--level-4 {
+      font-size: $font-size-h6;
+      > li {
+        padding: $padding-base-vertical 0;
+        >i:before {
+          font-size: $font-size-h6;
+          font-weight: bold;
+        }
+      }
+    }
+    ul {
+      padding-left: $grid-gutter-width;
+      padding-top: $padding-large-vertical;
+    }
   }
 }
