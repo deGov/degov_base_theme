@@ -190,7 +190,8 @@
   }
 }
 
-.press-list {
+// Press specific slider
+.press-slider {
   .slick-arrow {
     top: -51px;
     &:before {
@@ -210,6 +211,7 @@
   }
 }
 
+// Tweets specific slider
 .tweets {
   .slick-arrow {
     top: -27px;

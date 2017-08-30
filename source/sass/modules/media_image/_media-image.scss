@@ -52,6 +52,7 @@
   }
 }
 
+
 // For view mode default
 .image--full {
   margin-top: 0;
@@ -112,6 +113,20 @@
     &:before {
       padding-left: 0;
       padding-right: $padding-xs-horizontal;
+    }
+  }
+}
+
+// For view mode preview
+.media--preview {
+  .image__image {
+    position: relative;
+  }
+  .image__date {
+    padding-right: $padding-base-vertical;
+    &:after {
+      content: "/";
+      padding-left: $padding-xs-horizontal;
     }
   }
 }

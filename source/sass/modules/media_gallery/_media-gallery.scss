@@ -45,3 +45,11 @@
   }
 }
 
+// For view mode preview
+.media--preview {
+  .gallery__title {
+    color: $brand-primary;
+    padding: 0 $padding-xs-horizontal;
+  }
+}
+

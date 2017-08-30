@@ -62,13 +62,13 @@ article.slim {
   }
 }
 
-.slim{
+article.slim{
   .teaser-content{
     padding: $grid-gutter-width/2;
   }
 }
 
-.small-image{
+article.small-image{
   border-bottom: 1px solid #dde6f0;
   .teaser-image{
     padding: $grid-gutter-width/2;
