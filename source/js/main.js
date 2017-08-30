@@ -74,8 +74,10 @@ const PhotoSwipeUiDefault = require('photoswipe/dist/photoswipe-ui-default');
       });
       $(document).once('press-enter').keypress(function (e) {
         if (e.which === 13) {
-          const value = $('input.nrw-menu-header__search-text').val();
-          window.location.href = '/suche?volltext=' + value;
+          if ($('.nrw-menu-header__search-text').is(':focus')) {
+            const value = $('input.nrw-menu-header__search-text').val();
+            window.location.href = '/suche?volltext=' + value;
+          }
         }
       });
     }
