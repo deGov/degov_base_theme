@@ -2,6 +2,13 @@
 
 // For block title in sidebar second
 .region-sidebar-second {
+  .block{
+    margin: -1*($grid-gutter-width/2);
+    > *{
+     margin: $grid-gutter-width/2;
+   }
+  }
+   
   .block-title {
     font-size: $font-size-h2;
     line-height: 1;
