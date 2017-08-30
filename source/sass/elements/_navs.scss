@@ -579,3 +579,32 @@
 
   }
 }
+
+// Sidebar menu - Min menu fourth level and deeper
+.nrw-menu-sidebar-sub {
+  margin-top: $grid-gutter-width/2;
+  &__menu-list {
+    list-style-type: none;
+    font-size: $font-size-small;
+    i {
+      margin-right: $padding-xs-horizontal;
+      &:before {
+        font-size: $font-size-extra-small;
+      }
+    }
+    &--level-4 {
+      font-size: $font-size-h6;
+      > li {
+        padding: $padding-base-vertical 0;
+        >i:before {
+          font-size: $font-size-h6;
+          font-weight: bold;
+        }
+      }
+    }
+    ul {
+      padding-left: $grid-gutter-width;
+      padding-top: $padding-large-vertical;
+    }
+  }
+}
