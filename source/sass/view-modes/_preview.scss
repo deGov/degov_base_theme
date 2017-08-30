@@ -7,6 +7,14 @@
 .media--preview__text-block {
   background-color: $nrw-primary;
   height: 240px;
+  .tags {
+    a {
+      color: $color-white;
+    }
+    &:before{
+      color: $color-white;
+    }
+  }
 }
 
 .media--preview__type-text {
@@ -65,6 +73,9 @@
 
 // Provide alternating display for certain views, that use view mode preview
 .view-latest-media {
+  .teaser-image {
+    height: 240px;
+  }
   .views-row {
     &:nth-child(4n-2),&:nth-child(4n-3){
       .teaser-image{
