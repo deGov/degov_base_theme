@@ -1,37 +1,14 @@
-
-.view-latest-media {
-  .views-row {
-    &:nth-child(4n-2),&:nth-child(4n-3){
-      .teaser-image{
-        &:after{
-          @include triangle-left($nrw-primary);
-          top: 15px;
-          right: 0;
-        }
-      }
-    }
-    &:nth-child(4n-1),&:nth-child(4n){
-      .media--preview__image-block {
-        float: right;
-      }
-      .teaser-image{
-        &:after{
-          @include triangle-right($nrw-primary);
-          top: 15px;
-        }
-      }
-    }
-  }
-}
-
+// Styling for media in view mode preview
 .media--preview {
   height: 240px;
   overflow: hidden;
 }
+
 .media--preview__text-block {
   background-color: $nrw-primary;
   height: 240px;
 }
+
 .media--preview__type-text {
   position: absolute;
   left: $grid-gutter-width/2;
@@ -53,6 +30,7 @@
   text-align: left;
   font-size: $font-size-base;
 }
+
 .media--preview__caption {
   float: none;
   padding: 0;
@@ -82,5 +60,31 @@
     font-size: $media-dummy-icon-size;
     line-height: $media-dummy-icon-size;
     color: $brand-primary;
+  }
+}
+
+// Provide alternating display for certain views, that use view mode preview
+.view-latest-media {
+  .views-row {
+    &:nth-child(4n-2),&:nth-child(4n-3){
+      .teaser-image{
+        &:after{
+          @include triangle-left($nrw-primary);
+          top: 15px;
+          right: 0;
+        }
+      }
+    }
+    &:nth-child(4n-1),&:nth-child(4n){
+      .media--preview__image-block {
+        float: right;
+      }
+      .teaser-image{
+        &:after{
+          @include triangle-right($nrw-primary);
+          top: 15px;
+        }
+      }
+    }
   }
 }
