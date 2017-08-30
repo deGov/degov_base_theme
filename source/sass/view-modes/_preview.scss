@@ -2,9 +2,6 @@
 .view-latest-media {
   .views-row {
     &:nth-child(4n-2),&:nth-child(4n-3){
-      .media--preview__text-block {
-
-      }
       .teaser-image{
         &:after{
           @include triangle-left($nrw-primary);
@@ -14,8 +11,10 @@
       }
     }
     &:nth-child(4n-1),&:nth-child(4n){
-      .teaser-image{
+      .media--preview__image-block {
         float: right;
+      }
+      .teaser-image{
         &:after{
           @include triangle-right($nrw-primary);
           top: 15px;
