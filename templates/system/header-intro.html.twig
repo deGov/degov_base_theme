@@ -11,17 +11,17 @@
                 </ul>
             </nav>
         </div>
-        <div class="menu col-md-3 right">
+        <div class="menu col-md-4 right">
             <nav id="secondary-menu" role="navigation" class="navigation">
                 <ul id="secondary-menu-links" class="links inline clearfix">
                     {% if logged_in %}
-                         <li class="first"><a href="/user" title="Benutzer" class="login">{% trans %}Benutzer{% endtrans %}</a></li> 
+                         <li class="first"><a href="/user" title="Benutzer" class="login">{% trans %}Benutzer{% endtrans %}</a></li>
                     {% else %}
-                         <li class="first"><a href="/user/login" title="Anmelden / Registrieren" class="login">{% trans %}Anmelden / Registrieren{% endtrans %}</a></li>  
+                         <li class="first"><a href="/user/login" title="Anmelden / Registrieren" class="login">{% trans %}Anmelden / Registrieren{% endtrans %}</a></li>
                     {% endif %}
                     {% if social_media_settings %}
                     <li><a href="/servicecenter/kontakt" title="Kontakt" class="kontakt">Kontakt</a></li>
-                    <li class="last"><a href="#" class="js-social-media-settings-open hidden">{{ 'Social Media Settings'|trans }}</a></li>
+                    <li class="last"><a href="#" class="js-social-media-settings-open social-media-settings--menu-item hidden">{{ 'Social Media Settings'|trans }}<i class="fa fa-cog" aria-hidden="true"></i></a></li>
                     {% else %}
                     <li class="last"><a href="/servicecenter/kontakt" title="Kontakt" class="kontakt">Kontakt</a></li>
                     {% endif %}

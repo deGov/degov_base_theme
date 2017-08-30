@@ -116,7 +116,13 @@
           &.kontakt {
             background: url(../images/kontakt.png) no-repeat scroll right 10px transparent;
           }
-
+          &.social-media-settings--menu-item {
+            i:before {
+              font-size: $font-size-h6;
+              line-height: $font-size-extra-small;
+              margin-left: $padding-large-horizontal/2;
+            }
+          }
         }
       }
     }
