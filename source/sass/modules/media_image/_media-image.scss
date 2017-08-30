@@ -52,8 +52,74 @@
   }
 }
 
+// For view mode default
+.image--full {
+  margin-top: 0;
+  margin-left: -$vertical-gutter-width/2;
+  margin-right: -$vertical-gutter-width/2;
+
+  .image__wrapper {
+    position: relative;
+  }
+
+  .image__info {
+    text-align: right;
+  }
+
+  .image__caption {
+    float: none;
+    box-decoration-break: clone;
+    background: rgba($gray-dark, 0.7);
+  }
+
+  .image__copyright {
+    box-decoration-break: clone;
+    background: rgba($gray-dark, 0.7);
+
+    &:before {
+      padding-left: 0;
+      padding-right: $padding-xs-horizontal;
+    }
+  }
+
+  .tags {
+    color: $brand-primary;
+    background-color: $nrw-light;
+    padding-top: $padding-xs-horizontal;
+    padding-right: $padding-xs-horizontal;
+    padding-bottom: $padding-xs-horizontal;
+
+    &:before {
+      color: $brand-primary;
+      padding-top: $padding-xs-horizontal;
+      padding-left: $padding-xs-horizontal;
+    }
+  }
+}
+
+// For view-mode-slider-main-16-9
+.view-mode-slider-main-16-9 {
+  .image__caption {
+    float: none;
+    box-decoration-break: clone;
+    background: rgba($gray-dark, 0.7);
+  }
+
+  .image__copyright {
+    box-decoration-break: clone;
+    background: rgba($gray-dark, 0.7);
+
+    &:before {
+      padding-left: 0;
+      padding-right: $padding-xs-horizontal;
+    }
+  }
+}
+
+// For view mode preview
 // For view mode search
-.media--search {
+.media--search,
+.media--preview {
   .image__image {
     position: relative;
   }
