@@ -1,6 +1,4 @@
 .media-gallery {
-  margin-left: $grid-gutter-width/-2;
-  margin-right: $grid-gutter-width/-2;
   margin-top: 0;
 
   &__tag {
@@ -21,7 +19,6 @@
     background: $brand-primary;
     color: $color-white;
     font-size: $font-size-h4;
-    margin-bottom: $grid-gutter-width/2;
   }
   &__title {
     font-weight: bold;
@@ -43,6 +40,17 @@
       display: none;
     }
   }
+
+  .slideshow__slides {
+    article {
+      margin-top: 0;
+    }
+  }
+}
+
+.media-gallery.view-mode-full {
+  margin-left: $grid-gutter-width/-2;
+  margin-right: $grid-gutter-width/-2;
 }
 
 // For view mode preview
