@@ -66,6 +66,7 @@
           font-weight: normal;
           &:first-child{
             margin: 0;
+            font-size: $font-size-small;
           }
         }
         .slide__text__sub {
@@ -114,6 +115,7 @@
       text-transform: uppercase;
       margin-bottom: 0;
       color: $brand-primary;
+      font-size: $font-size-small;
       @media(max-width: 992px){
         color: $color-white;
       }
