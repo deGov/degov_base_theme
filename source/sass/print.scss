@@ -1,3 +1,6 @@
+
+@import 'variables';
+
 @media print{
   body{
     .header-wrapper, .footer-wrapper, .breadcrumb, .sharing ,img, aside , .tabs, .contextual, .tags{
@@ -53,10 +56,60 @@
 }
 
 body.print{
+  background: transparent;
+  div[class*='col-sm'], article[class*='col-sm'], .region-content div{
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important; 
+  }
+  div{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: $gray-base;
+  }
+  .slideshow .slick-track .slick-slide .slide__text{
+    color: $gray_base;
+  }
+  .main-wrapper {
+    background-color: transparent;
+  }
+  .main-container{
+    margin: 0;
+  }
+  .region-header-region{
+    background: transparent;
+    color: $gray-base;
+  }
+  .content-header__text{
+    background: transparent;
+    color: $gray-base;
+  }
   .header-wrapper, .footer-wrapper, .breadcrumb, .sharing ,img, aside , .tabs, .contextual, .tags{
     display: none ;
   }
+  .view-reference .view-content{
+    margin: 20px;
+  }
+  div[class*="__header-paragraphs"] .paragraph a{
+    color: $gray-base;
+  }
+  div[class*="-image"]{
+    display: none;
+  }
+  .social-media-source-youtube{
+    display: none;
+  }
+  .faq_question{
+    color: $gray-base;
+  }
+  .faq_answer{
+    display: block !important;
+  }
   a{
+    color: $gray-base;
     &:after{
       content: '' !important;
     }
@@ -69,8 +122,18 @@ body.print{
       display: none;
     }
   }
+  .citation{
+    color: $gray-base;
+  }
   .slick-dots, .slick-arrow{
     display: none !important;
+  }
+  .paragraph__header{
+    background: transparent;
+    color: $gray-base;
+    i{
+      display: none;
+    }
   }
   .slideshow {
     button{
@@ -101,5 +164,18 @@ body.print{
   }
   .block-degov-tweets{
     display: none;
+  }
+}
+
+.printer{
+  float: right;
+  margin-top: $grid-gutter-width/2;
+  span{
+    display: inline-block;
+    width: auto;
+    float: left;
+    margin-right: $grid-gutter-width/8;
+    font-size: $font-size-small;
+    line-height: $font-size-h2+2;
   }
 }
