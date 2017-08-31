@@ -11,7 +11,7 @@
 }
 
 .js-social-media-code {
-  >div {
+  &__message {
     padding: $grid-gutter-width/2;
     margin: $grid-gutter-width/2;
     background: rgba($gray-base,0.5);

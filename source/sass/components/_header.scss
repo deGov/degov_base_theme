@@ -127,11 +127,15 @@
 							a.gebaerdensprache,
 							a.leichtesprache,
 							a.login,
-							a.kontakt{
+							a.kontakt,
+							a.social-media-settings--menu-item {
 								padding: $grid-gutter-width/4 0;
 								background: none;
 								font-weight: normal;
 								display: block;
+							}
+							a.social-media-settings--menu-item i {
+								display: none;
 							}
 						}
 					}
