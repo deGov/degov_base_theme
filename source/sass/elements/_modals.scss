@@ -2,20 +2,31 @@
   .modal-dialog {
     background: rgba($brand-secondary,0.8);
     padding: $grid-gutter-width;
+    max-width: 100%;
+    @include smaller-than($screen-xs-max) {
+      padding: $grid-gutter-width/2;
+    }
   }
   .modal-header {
     padding: 0;
   }
   .modal-title {
     color: $color-white;
-    padding-left: $grid-gutter-width;
     margin: $grid-gutter-width/2 0 $grid-gutter-width/4 0;
+    padding-left: $grid-gutter-width;
+    @include smaller-than($screen-xs-max) {
+      padding-left: 0;
+      margin-top: $grid-gutter-width;
+    }
   }
   .modal-content {
     box-shadow: none;
     border-radius: 0;
     border: none;
     padding: $grid-gutter-width/2;
+    @include smaller-than($screen-xs-max) {
+      padding: $grid-gutter-width/4;
+    }
   }
   &__text {
     a {
