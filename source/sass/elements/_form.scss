@@ -8,14 +8,14 @@ form.webform-submission-form{
   .form-actions{
     display: flex;
     float: right;
-  } 
+  }
   label{
-    color: $brand-primary;
+    color: $brand-secondary;
     font-size: $font-size-small;
     font-weight: bold;
     &:after{
       content: '*';
-      color: $brand-primary;
+      color: $brand-secondary;
       background-image: none;
     }
   }
@@ -24,7 +24,7 @@ form.webform-submission-form{
     .panel-heading{
       background: transparent;
       padding: 0;
-      color: $brand-primary;
+      color: $brand-secondary;
       font-weight: bold;
       border-bottom: 0;
     }
@@ -58,7 +58,7 @@ form.webform-submission-form{
       &:after{
         border:0;
         font-size: $font-size-h2;
-        color: $brand-primary;
+        color: $brand-secondary;
         width: auto;
         height: auto;
         position: relative;
@@ -67,14 +67,14 @@ form.webform-submission-form{
     }
     &-open{
       .button{
-        
+
         &:after{
           transform: rotate(180deg);
         }
       }
     }
     &-items{
-      
+
       li{
         color: $color-white;
         background-color: rgba($nrw-secondary, 1);
@@ -92,8 +92,8 @@ form.webform-submission-form{
   .btn {
     &-primary{
       background: transparent;
-      border: 0px solid $brand-primary;
-      color: $brand-primary;
+      border: 0px solid $brand-secondary;
+      color: $brand-secondary;
       float: right;
       margin-right: 0;
       padding-right: 0;
@@ -101,7 +101,7 @@ form.webform-submission-form{
       font-weight: bold;
       @include icon-after($fa-var-paper-plane);
       &:focus{
-        border: 1px dotted $brand-primary;
+        border: 1px dotted $brand-secondary;
       }
       &:after{
         color: white;
@@ -120,7 +120,7 @@ form.webform-submission-form{
   cursor: pointer;
   span{
     margin: 0 auto;
-    color: $brand-primary;
+    color: $brand-secondary;
     float: right;
     margin-right: 0;
     font-size: $font-size-small;
@@ -134,7 +134,7 @@ form.webform-submission-form{
     margin-left: $grid-gutter-width/8;
     &:before{
       color: $color-white;
-      background-color: $brand-primary;
+      background-color: $brand-secondary;
       font-size: $font-size-base;
       padding: 9px 12px;
       width: 36px;
@@ -157,7 +157,7 @@ form.webform-submission-form{
       &:after{
         border:0;
         font-size: $font-size-h2;
-        color: $brand-primary;
+        color: $brand-secondary;
         width: auto;
         height: auto;
         position: relative;
@@ -166,7 +166,7 @@ form.webform-submission-form{
     }
     &-open{
       .button{
-        
+
         &:after{
           transform: rotate(180deg);
         }

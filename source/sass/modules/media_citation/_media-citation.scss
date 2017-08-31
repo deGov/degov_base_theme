@@ -1,5 +1,5 @@
 .citation {
-  color: $brand-primary;
+  color: $brand-secondary;
   @include smaller-than($screen-xs-max) {
     display: flex;
     flex-direction: column;
@@ -30,6 +30,7 @@
     font-size: $font-size-h3;
     font-family: $font-family-serif;
     font-style: italic;
+    line-height: 1.5;
     padding-bottom: $padding-base-vertical;
     @include smaller-than($screen-xs-max) {
       font-size: $font-size-h4;

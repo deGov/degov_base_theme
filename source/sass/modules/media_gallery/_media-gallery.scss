@@ -43,12 +43,15 @@
       display: none;
     }
   }
+  .media-image {
+    margin: 0;
+  }
 }
 
 // For view mode preview
 .media--preview {
   .gallery__title {
-    color: $brand-primary;
+    color: $brand-secondary;
     padding: 0 $padding-xs-horizontal;
   }
   .gallery__description {

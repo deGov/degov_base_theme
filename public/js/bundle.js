@@ -91,7 +91,9 @@
 	  // same Datepicker in calendars
 	  Drupal.behaviors.datepickerCalendar = {
 	    attach: function attach(context, settings) {
-	      $('input[type="date"]').datepicker({ dateFormat: 'yy-mm-dd' }).attr('type', 'text');
+	      $(context).find('input[type="date"]').once('date-pricker').each(function () {
+	        $(this).datepicker({ dateFormat: 'yy-mm-dd' }).attr('type', 'text');
+	      });
 	    }
 	  };
 

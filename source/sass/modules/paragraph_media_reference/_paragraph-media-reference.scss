@@ -1,16 +1,6 @@
 .media-reference {
   .paragraph__content  {
-    margin: $padding-small-horizontal*-2;
-    article.address,
-    .document,
-    .media-tweet,
-    .media-instagram {
-      padding-top: $vertical-gutter-width/2;
-      padding-bottom: $vertical-gutter-width/2;
-    }
-  }
-  .audio {
-    margin: 0;
+    padding: 0;
   }
 
   &.social-media-source {
@@ -79,11 +69,5 @@
         }
       }
     }
-  }
-}
-
-.region-sidebar-second .media-reference {
-  .paragraph__content {
-    margin: 0 $grid-gutter-width/-2;
   }
 }

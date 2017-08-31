@@ -3,16 +3,16 @@
       text-align: center;
       font-size: 54px;
       line-height: 54px;
-      color: $brand-primary;
+      color: $brand-secondary;
     }
     &__day-of-week{
       font-weight: bold;
-      color: $brand-primary;
+      color: $brand-secondary;
       font-size: $font-size-base;
     }
     &__month{
       font-weight: bold;
-      color: $brand-primary;
+      color: $brand-secondary;
       margin-top: $grid-gutter-width/4;
       font-size: $font-size-base - 2;
       line-height: $font-size-base;
@@ -23,7 +23,7 @@
     }
   }
   .field--name-field-tags .field--item {
-    background: $brand-primary;
+    background: $brand-secondary;
     display: inline-block;
     color: $color-white;
     margin-right: $grid-gutter-width/4;

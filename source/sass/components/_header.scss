@@ -79,7 +79,7 @@
 .header{
 	&__upper-menu{
 		min-height: 45px;
-		background-color: $brand-primary;
+		background-color: $brand-secondary;
 		font-size: $font-size-small - 2;
 		color: $color-white;
 		font-weight: bold;
@@ -151,13 +151,13 @@
 				box-shadow: 0 5px 5px $gray-base;
 				display: none;
 				label{
-					color: $brand-primary;
+					color: $brand-secondary;
 					font-weight: normal;
 				}
 			}
 		}
 		&	>  &--title{
-			background: $brand-primary;
+			background: $brand-secondary;
 			display: none;
 			position: relative;
 			text-align: center;
@@ -219,14 +219,14 @@
 	&__title{
 		font-size: $font-size-h2;
 		line-height: $font-size-h2;
-		color: $brand-primary;
+		color: $brand-secondary;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		position: absolute;
 		height: 100%;
 		a{
-			color: $brand-primary;
+			color: $brand-secondary;
 		}
 		span{
 			font-weight: bold;
