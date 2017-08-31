@@ -17,7 +17,9 @@
     &-facebook,
     &-youtube,
     &-twitter,
-    &-googleplus {
+    &-pinterest,
+    &-flickr,
+    &-vimeo {
       .fa-arrow-right:before {
         font-size: $font-size-base*2;
       }
@@ -48,7 +50,7 @@
     }
     &-googleplus {
       .paragraph__header .fa-arrow-right {
-        //background: $nrw-twitter-blue;
+        background: $google-plus-red;
         &:before {
           content: '\f0d5';
           font-size: $font-size-base*1.5;
@@ -57,7 +59,7 @@
     }
     &-pinterest {
       .paragraph__header .fa-arrow-right {
-        //background: $nrw-twitter-blue;
+        background: $pinterest-red;
         &:before {
           content: '\f231';
         }
@@ -65,7 +67,7 @@
     }
     &-flickr {
       .paragraph__header .fa-arrow-right {
-        //background: $nrw-twitter-blue;
+        background: $flickr-blue;
         &:before {
           content: '\f16e';
         }
@@ -73,7 +75,7 @@
     }
     &-vimeo {
       .paragraph__header .fa-arrow-right {
-        //background: $nrw-twitter-blue;
+        background: $vimeo-blue;
         &:before {
           content: '\f27d';
         }
