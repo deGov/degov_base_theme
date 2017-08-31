@@ -436,7 +436,7 @@
         color: $color-white;
       }
     }
-    a[href*=was-anderes] {
+    a[href*=simplenews] {
       @include icon($fa-var-newspaper-o);
       &:before {
         color: $color-white;
