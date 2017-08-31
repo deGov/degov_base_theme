@@ -120,8 +120,10 @@
 	      });
 	      $(document).once('press-enter').keypress(function (e) {
 	        if (e.which === 13) {
-	          var value = $('input.nrw-menu-header__search-text').val();
-	          window.location.href = '/suche?volltext=' + value;
+	          if ($('.nrw-menu-header__search-text').is(':focus')) {
+	            var value = $('input.nrw-menu-header__search-text').val();
+	            window.location.href = '/suche?volltext=' + value;
+	          }
 	        }
 	      });
 	    }
