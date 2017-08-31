@@ -15,7 +15,7 @@
     margin: 0;
     padding: $grid-gutter-width/2;
     display: inline-block;
-    color: $brand-primary;
+    color: $brand-secondary;
     background-color: $nrw-light;
     width: 100%;
 
@@ -23,7 +23,7 @@
       content: '\f061';
       font-family: FontAwesome;
       color: $color-white;
-      background-color: $brand-primary;
+      background-color: $brand-secondary;
       min-width: 45px; // To always keep width - responsive
       width: 45px;
       height: 45px;

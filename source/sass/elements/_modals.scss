@@ -1,6 +1,6 @@
 .social-media-settings {
   .modal-dialog {
-    background: rgba($nrw-primary,0.8);
+    background: rgba($brand-secondary,0.8);
     padding: $grid-gutter-width;
   }
   .modal-header {
@@ -54,7 +54,7 @@
 
   .modal-button {
     span {
-      color: $brand-primary;
+      color: $brand-secondary;
       font-size: $font-size-small;
       font-weight: bold;
       vertical-align: super;
@@ -86,7 +86,7 @@
   }
   &__cancel i{
     &:before {
-      background: $brand-primary;
+      background: $brand-secondary;
     }
   }
   &__save i{

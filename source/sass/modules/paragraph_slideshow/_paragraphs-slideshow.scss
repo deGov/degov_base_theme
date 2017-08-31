@@ -5,7 +5,7 @@
   }
   .slick-list {
     @media (max-width: $screen-sm-max) {
-      background-color: $nrw-primary;
+      background-color: $brand-secondary;
     }
   }
   .slick-track {
@@ -45,7 +45,7 @@
         width: 25%;
         margin-bottom: $vertical-gutter-width*1.5;
         padding-top: $grid-gutter-width/2;
-        color: $brand-primary;
+        color: $brand-secondary;
         @media (max-width: $screen-md-max) {
           max-height: 290px;
           width: 35%;
