@@ -26,10 +26,10 @@ $fa-font-path:   "../fonts/font-awesome";
     font-style: normal;
 }
 
-$nrw-primary: #1b4265; //dark_blue
-$nrw-secondary: #286093; // blue
+$nrw-primary: #233755; // dark_blue
+$nrw-secondary: #3C506E; // blue
 $nrw-gray: #d9dada; //grey
-$nrw-light: #dde6f0; // light blue
+$nrw-light: #EAEFF6; // light blue
 
 
 //other colors
@@ -63,6 +63,7 @@ $gray: lighten($gray-base, 33.5%);
 $gray-light: #e3e3e3;
 $gray-lighter: #f5f5f5;
 $brand-primary: $nrw-primary;
+$brand-secondary: $nrw-secondary;
 $brand-success: $nrw-green;
 $brand-info: $nrw-gray;
 $brand-warning: $nrw-yellow;
