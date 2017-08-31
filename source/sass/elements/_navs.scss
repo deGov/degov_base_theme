@@ -41,7 +41,7 @@
       top: 42px;
       list-style: none;
       padding: 0;
-      background: $brand-primary;
+      background: $brand-secondary;
       li{
         padding: $padding-large-vertical/2 $padding-large-vertical;
         a{
@@ -83,7 +83,7 @@
       cursor: pointer;
       color: $color-white;
       @media(max-width: $screen-sm-min){
-        color: $brand-primary;
+        color: $brand-secondary;
       }
     }
   }
@@ -99,7 +99,7 @@
         a{
           color: $color-white;
           @media(max-width: $screen-sm-min){
-            color: $brand-primary;
+            color: $brand-secondary;
           }
           padding: $padding-large-vertical $padding-large-vertical*2 $padding-large-vertical/2.5 $padding-large-vertical;
           -webkit-font-smoothing: antialiased;
@@ -211,7 +211,7 @@
       }
     }
     a{
-      color: $brand-primary;
+      color: $brand-secondary;
       align-self: flex-end;
       text-align: center;
       width: 100%;
@@ -450,7 +450,7 @@
 .nrw-menu-header-responsive{
   display: none;
   padding: 0 $grid-gutter-width/2;
-  color: $brand-primary;
+  color: $brand-secondary;
   &__list{
     list-style: none;
     display: none;
@@ -462,7 +462,7 @@
     font-weight: normal;
     margin-right: $padding-small-horizontal;
     &:before {
-      color: $brand-primary;
+      color: $brand-secondary;
     }
   }
   .fa-angle-down {
@@ -604,14 +604,14 @@
   span {
     width: 43px;
     text-align: center;
-    color: $brand-primary;
+    color: $brand-secondary;
   }
   i{
     display: block;
     font-size: $font-size-h2 + 5;
     padding: $grid-gutter-width/4 - 3;
     margin: $grid-gutter-width/2 $grid-gutter-width/2 0 0;
-    background: $brand-primary;
+    background: $brand-secondary;
     color: $color-white;
   }
   span{

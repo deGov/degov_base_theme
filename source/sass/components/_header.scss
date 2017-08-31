@@ -151,13 +151,13 @@
 				box-shadow: 0 5px 5px $gray-base;
 				display: none;
 				label{
-					color: $brand-primary;
+					color: $brand-secondary;
 					font-weight: normal;
 				}
 			}
 		}
 		&	>  &--title{
-			background: $brand-primary;
+			background: $brand-secondary;
 			display: none;
 			position: relative;
 			text-align: center;
