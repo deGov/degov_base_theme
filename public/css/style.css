@@ -4901,13 +4901,13 @@ form.webform-submission-form {
         line-height: 1; }
       .user-logged-in .nav-tabs.tabs--primary li a[href*=revisions]:before {
         color: #ffffff; }
-    .user-logged-in .nav-tabs.tabs--primary li a[href*=was-anderes] {
+    .user-logged-in .nav-tabs.tabs--primary li a[href*=simplenews] {
       font-size: 1px;
       line-height: 25px;
       letter-spacing: -1px;
       color: transparent;
       display: inline-block; }
-      .user-logged-in .nav-tabs.tabs--primary li a[href*=was-anderes]:before {
+      .user-logged-in .nav-tabs.tabs--primary li a[href*=simplenews]:before {
         display: inline-block;
         font: normal normal normal 14px/1 FontAwesome;
         font-size: inherit;
@@ -4919,7 +4919,7 @@ form.webform-submission-form {
         font-size: 16px;
         content: "";
         line-height: 1; }
-      .user-logged-in .nav-tabs.tabs--primary li a[href*=was-anderes]:before {
+      .user-logged-in .nav-tabs.tabs--primary li a[href*=simplenews]:before {
         color: #ffffff; }
     .user-logged-in .nav-tabs.tabs--primary li a {
       display: block;
