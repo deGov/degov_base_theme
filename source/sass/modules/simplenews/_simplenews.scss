@@ -10,7 +10,7 @@
     border: none;
     &:focus {
       box-shadow: none;
-      outline: $nrw-primary auto 5px;
+      outline: $brand-secondary auto 5px;
     }
   }
   #edit-subscribe {
@@ -22,7 +22,7 @@
   #edit-unsubscribe {
     @include icon-after($fa-var-times, $padding-small-horizontal);
     &:after {
-      background: $brand-primary;
+      background: $brand-secondary;
     }
   }
   #edit-subscribe,
@@ -33,7 +33,7 @@
     }
   }
   .form-submit {
-    color: $brand-primary;
+    color: $brand-secondary;
     font-size: $font-size-small;
     font-weight: bold;
     border: none;

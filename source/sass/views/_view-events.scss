@@ -71,7 +71,7 @@
 }
 .view-calendar__header{
 	font-size: $font-size-h3;
-  color: $brand-primary;
+  color: $brand-secondary;
 	display: flex;
 	padding: 20px;
 	background: $nrw-light;
@@ -81,7 +81,7 @@
 	}
 	i{
 		color: $color-white;
-		background-color: $brand-primary;
+		background-color: $brand-secondary;
 		min-width: 45px; // To always keep width - responsive
 		width: 45px;
 		height: 45px;

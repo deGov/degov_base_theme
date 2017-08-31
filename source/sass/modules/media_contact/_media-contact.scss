@@ -5,7 +5,7 @@
     margin: -1*($grid-gutter-width/2);
     padding: $grid-gutter-width/2;
     padding-top: 0;
-    background-color: $brand-primary;
+    background-color: $brand-secondary;
     color: $color-white;
     &__position{
 
@@ -51,7 +51,7 @@ aside{
            min-height: 200px;
         }
         &__position{
-            color: $brand-primary;
+            color: $brand-secondary;
             font-weight: bold;
             padding: 0 $grid-gutter-width/2;
             margin-bottom: $grid-gutter-width/2;
@@ -65,8 +65,7 @@ aside{
             align-self: center;
             @include make-md-column(9);
             a{
-                color: $brand-primary;
-
+              color: $brand-secondary;
             }
         }
     }

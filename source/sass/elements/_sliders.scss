@@ -29,7 +29,7 @@
       position: relative;
       top: auto;
       bottom: -3px;
-      color: $brand-primary;
+      color: $brand-secondary;
       font-size: 22px;
       line-height: 22px;
       font-family: fontawesome;
@@ -69,7 +69,7 @@
       height: 11px;
       width: 11px;
       padding: 0;
-      border: 2px solid $brand-primary;
+      border: 2px solid $brand-secondary;
       border-radius: 100px;
       background-color: rgba($color-white, 0.4);
       &::before {
@@ -78,13 +78,13 @@
     }
     &.slick-active {
       button {
-        background-color: $brand-primary;
+        background-color: $brand-secondary;
       }
     }
     @include smaller-than($screen-sm-max) {
       button {
         border: 2px solid $color-white-transparent;
-        background-color: $brand-primary;
+        background-color: $brand-secondary;
       }
       &.slick-active {
         button {
@@ -106,7 +106,7 @@
   }
   &:before {
     font-family: fontawesome;
-    color: $brand-primary;
+    color: $brand-secondary;
   }
   &.slick-prev {
     right: 25%;
@@ -133,13 +133,13 @@
   background: $color-white;
   padding: $padding-base-vertical;
   i.fa {
-    color: rgba($brand-primary, 0.9);
+    color: rgba($brand-secondary, 0.9);
   }
   &:hover,
   &:active,
   &:focus {
     i.fa {
-      color: $brand-primary;
+      color: $brand-secondary;
     }
   }
 }
@@ -160,7 +160,7 @@
   line-height: 2.9;
   a {
     text-decoration: underline;
-    color: $brand-primary;
+    color: $brand-secondary;
   }
   i.fa {
     font-size: $font-size-h2;
@@ -249,7 +249,7 @@
     bottom: 38px;
     margin: 0 $grid-gutter-width/2;
     height: 44px;
-    background: rgba($brand-primary,0.9);
+    background: rgba($brand-secondary,0.9);
     button {
       position: absolute;
       left: 95px;
@@ -260,13 +260,13 @@
         background: $color-white;
         padding: $padding-large-vertical $padding-large-horizontal*0.75;
         height: 40px;
-        color: rgba($brand-primary, 0.75);
+        color: rgba($brand-secondary, 0.75);
       }
       &:hover,
       &:active,
       &:focus {
         &:before {
-          color: $brand-primary;
+          color: $brand-secondary;
         }
       }
     }
