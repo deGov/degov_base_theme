@@ -109,6 +109,12 @@
 .slideshow{
   padding: 0;
   .normal-page, .event,.press, .blog{ 
+    .slideshow-section{
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      color: $brand-primary;
+    }
     &__slideshow-image{
       
     } 
