@@ -46,7 +46,9 @@
 }
 
 // For teaser mode hide info
-.teaser {
+
+.view-mode-teaser-squared-1-1,
+.view-mode-teaser-landscape-small-8-3{
   .image__info {
     display: none;
   }

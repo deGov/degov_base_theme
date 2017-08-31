@@ -66,6 +66,7 @@
           font-weight: normal;
           &:first-child{
             margin: 0;
+            font-size: $font-size-small;
           }
         }
         .slide__text__sub {
@@ -110,6 +111,7 @@
   padding: 0;
   .normal-page, .event,.press, .blog{ 
     .slideshow-section{
+      font-size: $font-size-small;
       font-weight: bold;
       text-transform: uppercase;
       margin-bottom: 0;
