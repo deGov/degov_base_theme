@@ -186,7 +186,7 @@
       height: 100%;
     }
     i{
-      color: $brand-primary;
+      color: $brand-secondary;
       z-index: 1;
       margin-bottom: $padding-base-vertical*2;
       &:before{
@@ -203,7 +203,7 @@
         }
       }
       &:hover{
-        background: $brand-primary;
+        background: $brand-secondary;
         color: $color-white;
         i{
           color: $color-white;
