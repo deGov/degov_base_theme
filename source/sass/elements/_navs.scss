@@ -406,31 +406,43 @@
     &:first-child a {
       @include icon($fa-var-eye);
     }
+    a{
+      @include icon($fa-var-circle);
+      &:before {
+        color: $color-white;
+      }
+    }
     a[href*=edit] {
       @include icon($fa-var-pencil);
+      &:before {
+        color: $color-white;
+      }
     }
     a[href*=delete] {
       @include icon($fa-var-trash-o);
+      &:before {
+        color: $color-white;
+      }
     }
     a[href*=config] {
       @include icon($fa-var-cogs);
+      &:before {
+        color: $color-white;
+      }
     }
     a[href*=revisions] {
       @include icon($fa-var-list-ol);
+      &:before {
+        color: $color-white;
+      }
     }
-    a[href*=simplenews] {
+    a[href*=was-anderes] {
       @include icon($fa-var-newspaper-o);
+      &:before {
+        color: $color-white;
+      }
     }
-    a[href*=latest] {
-      @include icon($fa-var-tag);
-    }
-    &:first-child a,
-    a[href*=edit],
-    a[href*=delete],
-    a[href*=config],
-    a[href*=revisions],
-    a[href*=simplenews],
-    a[href*=latest] {
+    a {
       display: block;
       width: $font-size-h1;
       height: $font-size-h1;
