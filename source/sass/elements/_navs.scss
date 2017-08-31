@@ -408,11 +408,19 @@
     a[href*=revisions] {
       @include icon($fa-var-list-ol);
     }
+    a[href*=simplenews] {
+      @include icon($fa-var-newspaper-o);
+    }
+    a[href*=latest] {
+      @include icon($fa-var-tag);
+    }
     &:first-child a,
     a[href*=edit],
     a[href*=delete],
     a[href*=config],
-    a[href*=revisions] {
+    a[href*=revisions],
+    a[href*=simplenews],
+    a[href*=latest] {
       display: block;
       width: $font-size-h1;
       height: $font-size-h1;
