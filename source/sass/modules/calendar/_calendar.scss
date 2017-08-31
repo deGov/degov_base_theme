@@ -7,7 +7,7 @@
     margin-bottom: $grid-gutter-width/4;
     padding-top: $grid-gutter-width/4;
     &__item--current{
-      color: $brand-primary;
+      color: $brand-secondary;
         font-size: $font-size-h2;
     }
   }
@@ -37,7 +37,7 @@
           font-size: $font-size-small;
           line-height: $font-size-h2;
         }
-      } 
+      }
     }
   }
   table{
@@ -49,14 +49,14 @@
         border: 0;
         font-size: $font-size-h3;
         &.current-week{
-          background: $brand-primary;
+          background: $brand-secondary;
           color: $color-white;
         }
         &.days{
           font-size: $font-size-small;
           font-weight: bold;
           padding: $grid-gutter-width/4;
-          color: $brand-primary;
+          color: $brand-secondary;
         }
         &.today{
           background: $nrw-green;
@@ -74,7 +74,7 @@
 
 .calendar__title{
 	font-size: $font-size-h3;
-  color: $brand-primary;
+  color: $brand-secondary;
 	display: flex;
 	padding: 20px;
 	background: $nrw-light;
@@ -84,7 +84,7 @@
 	}
 	i{
 		color: $color-white;
-		background-color: $brand-primary;
+		background-color: $brand-secondary;
 		min-width: 45px; // To always keep width - responsive
 		width: 45px;
 		height: 45px;

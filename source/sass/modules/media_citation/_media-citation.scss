@@ -1,5 +1,5 @@
 .citation {
-  color: $brand-primary;
+  color: $brand-secondary;
   @include smaller-than($screen-xs-max) {
     display: flex;
     flex-direction: column;
