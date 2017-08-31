@@ -282,6 +282,13 @@
 	          $(this).closest('.paragraph__content').find('form').trigger('reset');
 	        });
 	      });
+	      $(document).once('reset-form-press').keypress(function (e) {
+	        if (e.which === 13) {
+	          if ($('.reset-form a').is(':focus')) {
+	            $('.reset-form a').closest('.paragraph__content').find('form').trigger('reset');
+	          }
+	        }
+	      });
 	    }
 	  };
 
