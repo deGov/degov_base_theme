@@ -2,4 +2,72 @@
   .paragraph__content  {
     padding: 0;
   }
+
+  &.social-media-source {
+    &-facebook,
+    &-youtube,
+    &-twitter,
+    &-googleplus {
+      .fa-arrow-right:before {
+        font-size: $font-size-base*2;
+      }
+    }
+    &-facebook {
+      .paragraph__header .fa-arrow-right {
+        background: $facebook-blue;
+        &:before {
+          content: '\f09a';
+        }
+      }
+    }
+    &-youtube {
+      .paragraph__header .fa-arrow-right {
+        background: $youtube-red;
+        &:before {
+          content: '\f167';
+        }
+      }
+    }
+    &-twitter {
+      .paragraph__header .fa-arrow-right {
+        background: $nrw-twitter-blue;
+        &:before {
+          content: '\f099';
+        }
+      }
+    }
+    &-googleplus {
+      .paragraph__header .fa-arrow-right {
+        //background: $nrw-twitter-blue;
+        &:before {
+          content: '\f0d5';
+          font-size: $font-size-base*1.5;
+        }
+      }
+    }
+    &-pinterest {
+      .paragraph__header .fa-arrow-right {
+        //background: $nrw-twitter-blue;
+        &:before {
+          content: '\f231';
+        }
+      }
+    }
+    &-flickr {
+      .paragraph__header .fa-arrow-right {
+        //background: $nrw-twitter-blue;
+        &:before {
+          content: '\f16e';
+        }
+      }
+    }
+    &-vimeo {
+      .paragraph__header .fa-arrow-right {
+        //background: $nrw-twitter-blue;
+        &:before {
+          content: '\f27d';
+        }
+      }
+    }
+  }
 }
