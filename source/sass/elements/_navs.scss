@@ -98,11 +98,12 @@
         float: left;
         a{
           color: $color-white;
+          padding: $padding-large-vertical $padding-large-vertical*2 $padding-large-vertical/2.5 $padding-large-vertical;
+          -webkit-font-smoothing: antialiased;
+          line-height: 1.5;
           @media(max-width: $screen-sm-min){
             color: $brand-primary;
           }
-          padding: $padding-large-vertical $padding-large-vertical*2 $padding-large-vertical/2.5 $padding-large-vertical;
-          -webkit-font-smoothing: antialiased;
           &.gebaerdensprache{
             background: url(../images/download.png) no-repeat scroll right 6px transparent;
             padding: $padding-large-vertical $padding-large-vertical*2.4 $padding-large-vertical/2.5 $padding-large-vertical;

@@ -27,6 +27,14 @@
   .simplenews-issue {
     padding: 0 $grid-gutter-width/2 $grid-gutter-width/2 $grid-gutter-width/2;
   }
+  .media,
+  .event {
+    time {
+      font-size: $font-size-small;
+      line-height: 1.5;
+      font-weight: bold;
+    }
+  }
 }
 
 .region-content .view-reference {
