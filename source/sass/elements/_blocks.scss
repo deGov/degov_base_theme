@@ -2,14 +2,22 @@
 
 // For block title in sidebar second
 .region-sidebar-second {
-  .block{
-    margin: -1*($grid-gutter-width/2);
+  
+  .block, nav{
+    margin: 0 -1*($grid-gutter-width/2);
     > *{
      margin: $grid-gutter-width/2;
    }
+    .paragraph__content{
+      .block-title{
+        margin-top:  -1*($grid-gutter-width/2); 
+      }
+    }
   }
-   
-  .block-title {
+  .block-sidebar-paragraphs{
+    margin-top:  -1*($grid-gutter-width/2); 
+  } 
+  h2.block-title, nav > h2 {
     font-size: $font-size-h2;
     line-height: 1;
     margin: 0;
