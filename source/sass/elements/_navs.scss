@@ -270,7 +270,7 @@
     width: 100%;
     left: 0;
     top: 45px;
-    z-index: 11;
+    z-index: 1100;
     &-title-area{
       padding: 20px 20px 13px 20px;
       color: $brand-primary;
@@ -353,8 +353,18 @@
       width: 75%;
       padding: $padding-base-horizontal $padding-base-horizontal*3.6;
       margin-bottom: $padding-base-horizontal*5;
+      @include larger-than($screen-md-min) {
+        column-count: 2;
+        column-gap: $grid-gutter-width;
+      }
+      @include larger-than($screen-lg-min) {
+        column-count: 3;
+      }
       .submenu {
         padding: $padding-base-vertical 0;
+        page-break-inside: avoid;
+        break-inside: avoid;
+        display: table;
       }
       ul{
         list-style: none;
