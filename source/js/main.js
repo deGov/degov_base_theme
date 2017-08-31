@@ -38,6 +38,7 @@ const PhotoSwipeUiDefault = require('photoswipe/dist/photoswipe-ui-default');
       $('.calendar--widget td.today').once('change-background').each(function () {
         $(this).closest('tr').children('td').addClass('current-week');
       });
+      $('input[type="date"]').datepicker({dateFormat: 'yy-mm-dd'}).attr('type', 'text');
     }
   };
 
