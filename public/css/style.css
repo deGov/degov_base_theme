@@ -4252,14 +4252,14 @@ form.webform-submission-form {
 .image__caption {
   float: left; }
 
-.js-social-media-code > div {
+.js-social-media-code__message {
   padding: 20px;
   margin: 20px;
   background: rgba(0, 0, 0, 0.5); }
-  .js-social-media-code > div,
-  .js-social-media-code > div a.js-social-media-settings-open {
+  .js-social-media-code__message,
+  .js-social-media-code__message a.js-social-media-settings-open {
     color: #ffffff; }
-  .js-social-media-code > div a {
+  .js-social-media-code__message a {
     font-weight: bold; }
 
 .social-media-settings .modal-dialog {
