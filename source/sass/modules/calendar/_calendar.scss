@@ -8,7 +8,7 @@
     padding-top: $grid-gutter-width/4;
     &__item--current{
       color: $brand-primary;
-        font-size: $font-size-h2;
+      font-size: $font-size-h2;
     }
   }
   ul{
@@ -105,4 +105,62 @@
 		font-weight: bold;
 		display: block;
 	}
+}
+
+.ui-datepicker{
+  .ui-datepicker-header{
+    background: $color-white;
+    .ui-datepicker-next{
+      margin: 9px;
+     span{ display: none;}
+        @include icon-before($fa-var-angle-double-right);
+        &:before{
+          font-size: $font-size-small;
+          line-height: $font-size-h2;
+          width: 92%;
+          text-align: center;
+          margin: 0;
+        }
+    }
+    .ui-datepicker-prev{
+      margin: 9px;
+      span{ display: none;}
+        @include icon-before($fa-var-angle-double-left);
+        &:before{
+          font-size: $font-size-small;
+          line-height: $font-size-h2;
+          width: 92%;
+          text-align: center;
+          margin: 0;
+        }
+    }
+    .ui-datepicker-title{
+      color: $brand-primary;
+      font-size: $font-size-h2;
+      font-weight: normal;
+    }
+  }
+  tbody{
+    tr{
+      background: $color-white;
+      border-bottom: 0;
+      td{
+        a{
+          text-align: center;
+          &.ui-state-default{
+            border: 0;
+            background: none;
+            &:hover{
+              background: $nrw-green;
+              color: $color-white;
+            }
+          }
+          &.ui-state-highlight{
+            background: $nrw-green;
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
 }

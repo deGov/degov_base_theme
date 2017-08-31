@@ -63,3 +63,12 @@ function nrw_base_theme_preprocess_page(&$variables) {
     ->createInstance('language_block:language_interface')
     ->build();
 }
+
+/**
+ * Implements hook_preprocess_menu_local_task().
+ */
+function nrw_base_theme_preprocess_menu_local_task(&$variables) {
+  if (empty($variables['link']['#options']['attributes']['title'])) {
+    $variables['link']['#options']['attributes']['title'] = $variables['element']['#link']['title'];
+  }
+}

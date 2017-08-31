@@ -88,6 +88,13 @@
 	    }
 	  };
 
+	  // same Datepicker in calendars
+	  Drupal.behaviors.datepickerCalendar = {
+	    attach: function attach(context, settings) {
+	      $('input[type="date"]').datepicker({ dateFormat: 'yy-mm-dd' }).attr('type', 'text');
+	    }
+	  };
+
 	  // upper Menu
 	  Drupal.behaviors.upperMenu = {
 	    attach: function attach(context, settings) {
@@ -120,8 +127,10 @@
 	      });
 	      $(document).once('press-enter').keypress(function (e) {
 	        if (e.which === 13) {
-	          var value = $('input.nrw-menu-header__search-text').val();
-	          window.location.href = '/suche?volltext=' + value;
+	          if ($('.nrw-menu-header__search-text').is(':focus')) {
+	            var value = $('input.nrw-menu-header__search-text').val();
+	            window.location.href = '/suche?volltext=' + value;
+	          }
 	        }
 	      });
 	    }
