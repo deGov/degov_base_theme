@@ -21,6 +21,12 @@
       }
     }
   }
+  .media {
+    margin: 0;
+  }
+  .simplenews-issue {
+    padding: 0 $grid-gutter-width/2 $grid-gutter-width/2 $grid-gutter-width/2;
+  }
 }
 
 .region-content .view-reference {
