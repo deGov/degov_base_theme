@@ -85,6 +85,12 @@
 	      $('.calendar--widget td.today').once('change-background').each(function () {
 	        $(this).closest('tr').children('td').addClass('current-week');
 	      });
+	    }
+	  };
+
+	  // same Datepicker in calendars
+	  Drupal.behaviors.datepickerCalendar = {
+	    attach: function attach(context, settings) {
 	      $('input[type="date"]').datepicker({ dateFormat: 'yy-mm-dd' }).attr('type', 'text');
 	    }
 	  };
