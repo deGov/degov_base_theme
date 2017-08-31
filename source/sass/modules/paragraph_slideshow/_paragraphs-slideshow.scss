@@ -114,6 +114,9 @@
       text-transform: uppercase;
       margin-bottom: 0;
       color: $brand-primary;
+      @media(max-width: 992px){
+        color: $color-white;
+      }
     }
     &__slideshow-image{
       
@@ -128,6 +131,9 @@
         h3{
           font-weight: bold;
           color: $brand-primary;
+            @media(max-width: 992px){
+              color: $color-white;
+            }
         }
       }
       p{
@@ -135,5 +141,8 @@
         font-weight: normal;
       }
     }
+  }
+  @media(max-width: 992px){
+    color: $color-white;
   }
 }
