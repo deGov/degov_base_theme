@@ -60,11 +60,10 @@
       font-weight: bold;
       @include icon-after($fa-var-search, $padding-large-vertical);
       &:after {
-        font-size: $font-size-h2;
-        padding: $padding-small-vertical*1.5;
-        padding-top: $padding-small-vertical;
         background: $nrw-green;
-        vertical-align: middle;
+        font-size: $font-size-h6;
+        margin-left: $grid-gutter-width/6;
+        padding: $grid-gutter-width/8 $grid-gutter-width/6.66;
       }
     }
   }

@@ -171,7 +171,7 @@
         font-size: $font-size-small;
         margin-top: 0;
         font-weight: bold;
-        margin-bottom: 12.5px;
+        margin-bottom: $grid-gutter-width/8;
       }
     }
     .form-item{
@@ -225,7 +225,6 @@
         .fa{
           background: $nrw-green;
           font-size: $font-size-h6;
-          padding: $grid-gutter-width/8;
           margin-left: $grid-gutter-width/6;
           padding: $grid-gutter-width/8 $grid-gutter-width/6.66;
         }
