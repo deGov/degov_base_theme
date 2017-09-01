@@ -22,6 +22,21 @@
     .slick-dots, .slick-arrow{
       display: none !important;
     }
+    .press .date{
+      background: $color-white;
+      color: $gray-base;
+    }
+    .blog__header-paragraphs{
+      background: $color-white;
+      .blog__header-date{
+        background: $color-white;
+        color: $gray-base;
+      }
+      .blog__header-title{
+        background: $color-white;
+        color: $gray-base;
+      }
+    }
     .slideshow {
       button{
         display: none !important;
@@ -120,6 +135,21 @@ body.print{
   .header-image__text{
     &:after{
       display: none;
+    }
+  }
+  .press .date{
+    background: $color-white;
+    color: $gray-base;
+  }
+  .blog__header-paragraphs{
+    background: $color-white;
+    .blog__header-date{
+      background: $color-white;
+      color: $gray-base;
+    }
+    .blog__header-title{
+      background: $color-white;
+      color: $gray-base;
     }
   }
   .citation{
