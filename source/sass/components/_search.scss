@@ -163,8 +163,9 @@
 .path-mediathek,
 .path-medienverwaltung {
   aside{
-    background-color: $brand-primary;
+    background-color: $brand-secondary;
     color: $color-white;
+    padding-top: $grid-gutter-width/2;
     .block{
       margin-bottom: $grid-gutter-width/2;
       h2,.control-label{
