@@ -10,4 +10,6 @@ function nrw_base_theme_install() {
     ->set('breadcrumb_home', '1')
     ->set('breadcrumb_title', '0')
     ->save();
+  // Force config installation as the profile installer refuses this step otherwise.
+  \Drupal::service('degov_config.updater')->configPartialImport('nrw_base_theme', 'optional', 'theme');
 }
