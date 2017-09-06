@@ -77,7 +77,9 @@ function nrw_base_theme_preprocess_page(&$variables) {
  */
 function nrw_base_theme_preprocess_swiftmailer(&$variables) {
   $variables['mail_date'] = time();
-}/**
+}
+
+/**
  * Implements hook_preprocess_menu_local_task().
  */
 function nrw_base_theme_preprocess_menu_local_task(&$variables) {
