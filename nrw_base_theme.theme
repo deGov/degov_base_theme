@@ -64,6 +64,11 @@ function nrw_base_theme_preprocess_page(&$variables) {
     ->build();
 }
 
-function nrw_preprocess_swiftmailer(&$variables) {
+/**
+ * Preprocess swiftmailer.
+ *
+ * @param $variables
+ */
+function nrw_base_theme_preprocess_swiftmailer(&$variables) {
   $variables['mail_date'] = time();
 }
