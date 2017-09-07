@@ -13,18 +13,20 @@
   Drupal.behaviors.nrw_base_theme = {
     attach: function (context, settings) {
       // Add an overlay to the sharing container to fake 2-click sharing buttons.
-      $('.sharing', context).once('sharing-overlay').each(function () {
+      $('.sharing li', context).once('sharing-overlay').each(function () {
         var sharing = $(this);
         var shariff = $('.shariff', sharing);
         var overlay = $('<div class="sharing-overlay"></div>').appendTo(sharing);
 
+
         // Sets shariff theme.
         var setTheme = function (theme) {
+
           var current_theme = shariff.attr('data-theme');
 
           if (current_theme !== theme) {
-            shariff.children('ul')
-              .removeClass('theme-' + current_theme)
+              sharing
+              .removeClass('theme-grey')
               .addClass('theme-' + theme);
             shariff.attr('data-theme', theme)
           }
