@@ -178,6 +178,12 @@
         left: 50%;
         transform: translateX(-50%);
       }
+      &.menu-search.is-active {
+        &:after{
+          content: '';
+          border: 0;
+        }
+      }
     }
     div{
       display: flex;
