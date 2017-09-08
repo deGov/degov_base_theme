@@ -1,12 +1,10 @@
 // Styling for media in view mode preview
 .media--preview {
-  height: 240px;
   overflow: hidden;
 }
 
 .media--preview__text-block {
   background-color: $nrw-primary;
-  height: 240px;
   .tags {
     a {
       color: $color-white;
@@ -74,9 +72,6 @@
 
 // Provide alternating display for certain views, that use view mode preview
 .view-latest-media {
-  .teaser-image {
-    height: 240px;
-  }
   .views-row {
     &:nth-child(4n-2),&:nth-child(4n-3){
       .teaser-image{
@@ -98,5 +93,34 @@
         }
       }
     }
+  }
+}
+
+.media--preview {
+  background-color: $brand-primary;
+  h2 {
+    margin:: 0;
+    font-weight:bold;
+    margin-bottom: 10px;
+    color: $color-white;
+  }
+  img {
+    background: $color-white;
+  }
+  .image__date {
+    &:after {
+      content: '';
+    }
+  }
+  a {
+    color: $color-white;
+    font-weight: normal;
+  }
+  .image__date, .audio__date, .gallery__date, .video__date {
+    padding-top: $grid-gutter-width/2;
+    font-size: $font-size-small;
+    line-height: 1.5;
+    font-weight: bold;
+    color: $color-white;
   }
 }
