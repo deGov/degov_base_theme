@@ -1,3 +1,12 @@
+.form-control{
+  border-radius: 0;
+}
+.selectric-hover{
+  border: 1px solid;
+}
+.form-inline .control-label{
+  margin-bottom: $grid-gutter-width/8;
+}
 form.webform-submission-form{
   float: none;
   max-width: 50%;
