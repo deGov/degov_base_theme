@@ -275,6 +275,20 @@
 	    }
 	  };
 
+	  Drupal.behaviors.mediaEqualHeight = {
+	    attach: function attach(context, settings) {
+	      $('.media--preview', context).once('equal-height').each(function () {
+	        var height = $(this).find('.media--preview__image-block').height();
+	        console.log(height);
+	        //$(this).css('height', height);
+	      });
+	      $(window).resize(function () {
+	        var height1 = $('.media--preview').find('.media--preview__image-block').height();
+	        console.log(height1);
+	      });
+	    }
+	  };
+
 	  Drupal.behaviors.resetform = {
 	    attach: function attach(context, settings) {
 	      $(context).find('.reset-form').once('reset-form').each(function () {
