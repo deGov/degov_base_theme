@@ -42,7 +42,9 @@
 }
 
 .media--search__date {
-  padding: 0 $padding-xs-horizontal;
+  display: block;
+  font-size: $font-size-small;
+  font-weight: bold;
 }
 
 .media--search__dummy {
@@ -66,7 +68,7 @@
   &:after {
     content: '';
     display: block;
-    padding-top: 56.25%;
+    padding-top: 50%;
   }
 }
 
