@@ -68,6 +68,8 @@ function nrw_base_theme_preprocess_page(&$variables) {
   $variables['language_block'] = \Drupal::service('plugin.manager.block')
     ->createInstance('language_block:language_interface')
     ->build();
+  // Add alt tag to logo
+  $variables['logo_alt'] = 'Logo: Die Landesregierung Nordrhein-Westfalen';
 }
 
 /**
