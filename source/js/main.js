@@ -228,20 +228,6 @@ const PhotoSwipeUiDefault = require('photoswipe/dist/photoswipe-ui-default');
     }
   };
 
-  Drupal.behaviors.mediaEqualHeight = {
-    attach: function (context, settings) {
-      $('.media--preview', context).once('equal-height').each(function () {
-        let height = $(this).find('.media--preview__image-block').height();
-        console.log(height);
-        //$(this).css('height', height);
-      });
-      $(window).resize(function () {
-        let height1 = $('.media--preview').find('.media--preview__image-block').height();
-        console.log(height1);
-      });
-    }
-  };
-
   Drupal.behaviors.resetform = {
     attach: function (context, settings) {
       $(context).find('.reset-form').once('reset-form').each(function () {
