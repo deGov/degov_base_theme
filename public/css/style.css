@@ -7976,7 +7976,7 @@ aside .media-contact__position {
   .media--preview a {
     color: #ffffff;
     font-weight: normal; }
-  .media--preview .image__date {
+  .media--preview .image__date, .media--preview .audio__date, .media--preview .gallery__date, .media--preview .video__date {
     padding-top: 20px;
     font-size: 12px;
     line-height: 1.5;

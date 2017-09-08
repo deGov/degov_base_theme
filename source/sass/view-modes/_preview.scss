@@ -121,7 +121,7 @@
     color: $color-white;
     font-weight: normal;
   }
-  .image__date{
+  .image__date, .audio__date, .gallery__date, .video__date{
     padding-top: $grid-gutter-width/2;
     font-size: $font-size-small;
     line-height: 1.5;
