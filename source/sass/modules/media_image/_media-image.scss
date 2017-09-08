@@ -1,5 +1,5 @@
 .image {
-  //@include make-row(); 
+  //@include make-row();
   position: relative;
   color: $color-white;
   &__info {
@@ -119,8 +119,7 @@
 }
 
 // For view mode preview
-// For view mode search
-.media--search,
+
 .media--preview {
   .image__image {
     position: relative;
@@ -131,5 +130,14 @@
       content: "/";
       padding-left: $padding-xs-horizontal;
     }
+  }
+}
+
+// For view mode search
+.media--search {
+  .image__date {
+    display: block;
+    font-size: $font-size-small;
+    font-weight: bold;
   }
 }
