@@ -78,6 +78,11 @@
 
     {% if rows %}
       <div class="view-content">
+        {% if footer %}
+          <div class="view-footer">
+            {{ footer }}
+          </div>
+        {% endif %}
         {{ rows }}
       </div>
     {% elseif empty %}
@@ -96,11 +101,6 @@
     {% endif %}
     {% if more %}
       {{ more }}
-    {% endif %}
-    {% if footer %}
-      <div class="view-footer">
-        {{ footer }}
-      </div>
     {% endif %}
     {% if feed_icons %}
       <div class="feed-icons">
