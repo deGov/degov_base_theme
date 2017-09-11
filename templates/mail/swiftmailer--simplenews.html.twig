@@ -18,13 +18,14 @@
             </td>
           </tr>
           <tr>
-            <td style="line-height:1.3em;font-family:arial,sans-serif;font-size:14px;text-align:left;vertical-align:top;border-collapse:collapse;"><img src="cid:e918f7f5ffc82d84d048eab7ddb4ab36@www.land.nrw" width="640" height="130" alt="" title="" style="outline:0;border:0;text-decoration:none;-ms-interpolation-mode:bicubic;line-height:0"></td>
+            <td style="line-height:1.3em;font-family:arial,sans-serif;font-size:14px;text-align:left;vertical-align:top;border-collapse:collapse;"><img src="{{ base_url ~ directory }}/public/images/email-header-img.png" width="640" height="130" alt="" title="" style="outline:0;border:0;text-decoration:none;-ms-interpolation-mode:bicubic;line-height:0">
+            </td>
           </tr>
           <tr>
             <td style="line-height:1em;font-family:arial,sans-serif;font-size:14px;text-align:right;vertical-align:top;border-collapse:collapse;background-color:#233852;color:#fff;padding-top:12px;padding-bottom:8px;padding-right:20px;"><span>{{ mail_date|format_date('date_medium') }}</span></td>
           </tr>
           <tr>
-            <td>
+            <td style="padding: 20px;">
               {{ body }}
             </td>
           </tr>
