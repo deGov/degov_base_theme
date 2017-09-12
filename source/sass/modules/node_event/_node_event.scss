@@ -23,23 +23,13 @@
     font-weight: bold;
     color: $brand-primary;
     margin-top: $grid-gutter-width/4;
+    margin-bottom: $grid-gutter-width/4;
     font-size: $font-size-base - 2;
     line-height: $font-size-base;
   }
   h3{
     font-weight: bold;
     line-height: $font-size-h3;
-  }
-}
-.field--name-field-tags .field--item {
-  background: $brand-primary;
-  display: inline-block;
-  color: $color-white;
-  margin-right: $grid-gutter-width/4;
-  font-size: $font-size-small;
-  padding: $grid-gutter-width/10 $grid-gutter-width/4;
-  a{
-    color: $color-white;
   }
 }
 
@@ -151,6 +141,11 @@
 }
 
 .region-sidebar-second {
+  .block-views-blocklatest-events-latest-event{
+    .form-group{
+      margin: 0;
+    }
+  }
   .view-reference .event {
     &,
     .event__teaser-content {
