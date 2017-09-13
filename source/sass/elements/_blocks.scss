@@ -10,12 +10,12 @@
    }
     .paragraph__content{
       .block-title{
-        margin-top:  -1*($grid-gutter-width/2); 
+        margin-top:  -1*($grid-gutter-width/2);
       }
     }
   }
-  .block-sidebar-paragraphs{
-    margin-top:  -1*($grid-gutter-width/2); 
+  .block-sidebar-paragraphs:nth-child(1){
+    margin-top:  -1*($grid-gutter-width/2);
   } 
   h2.block-title, nav > h2 {
     font-size: $font-size-h3;
