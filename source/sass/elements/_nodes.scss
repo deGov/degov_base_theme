@@ -81,3 +81,24 @@ article.small-image{
   }
 
 }
+.full{
+  .header{
+    position: relative;
+    margin: 0 -1*($grid-gutter-width/2);
+    background: $brand-primary;
+    padding: 0 $grid-gutter-width/2 $grid-gutter-width/2;
+    .media-video{
+      margin: 0 -1*($grid-gutter-width/2);
+    }
+    .header-image__image{
+    }
+    .sharing{
+      margin-top: $grid-gutter-width/6;
+    }
+    &:after{
+      @include triangle-down;
+      bottom: -15px;
+      left: $grid-gutter-width/2;
+    }
+  }
+}

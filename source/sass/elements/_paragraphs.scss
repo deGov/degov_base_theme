@@ -86,11 +86,7 @@ div[class*="__header-paragraphs"] .paragraph a {
 			font-size: $font-size-h4;
 			margin-bottom: 0;
 		}
-		&:after{
-			@include triangle-down;
-			bottom: -15px;
-			left: $grid-gutter-width/2;
-		}
+
 		.tags{
 			margin-top: $grid-gutter-width/3;
 		}
