@@ -115,13 +115,21 @@
 	  Drupal.behaviors.openSearch = {
 	    attach: function attach(context, settings) {
 	      $(context).find('.nrw-menu-header__icon.menu-search').once('upper-menu-click').click(function () {
-	        $('.nrw-menu-header__search').toggleClass('is-open is-close');
+	        var $search = $('.nrw-menu-header__search');
+	        $search.toggleClass('is-open is-close').find('input').focus();
+	        if ($search.hasClass('is-open')) {
+	          $(this).attr('aria-expanded', 'true');
+	        } else {
+	          $(this).attr('aria-expanded', 'false').focus();
+	        }
 	      });
 	      $('.nrw-menu-header__search-close a', context).click(function (e) {
+	        $('.nrw-menu-header__icon.menu-search').focus();
 	        $('.nrw-menu-header__search').toggleClass('is-open is-close');
 	      });
 	      $('.nrw-menu-header__search-close i', context).click(function (e) {
 	        $('.nrw-menu-header__search').toggleClass('is-open is-close');
+	        $('.nrw-menu-header__icon.menu-search').focus();
 	      });
 	      $('.nrw-menu-header__search .fa-search', context).click(function (e) {
 	        var value = $('input.nrw-menu-header__search-text').val();

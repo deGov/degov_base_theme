@@ -22,7 +22,6 @@ $tag-font-size: 12px;
     font-size: $tag-font-size;
     color: $color-white;
     font-weight: normal;
-    text-decoration: $link-hover-decoration;
   }
 }
 
@@ -42,6 +41,27 @@ $tag-font-size: 12px;
       display: inline-block;
       color: $brand-primary;
       padding-right: $padding-xs-horizontal;
+    }
+  }
+}
+
+.field--name-field-tags .field--item {
+  background: $brand-primary;
+  display: inline-block;
+  color: $color-white;
+  margin-right: 0;
+  font-size: $font-size-small;
+  padding: $grid-gutter-width/10 0;
+  a{
+    color: $color-white;
+    text-decoration: none;
+  }
+  &:after{
+    content: ',';
+  }
+  &:nth-last-child(1){
+    &:after{
+      content: '';
     }
   }
 }

@@ -4,6 +4,9 @@
     display: flex;
     flex-direction: column;
   }
+  blockquote{
+    border: 0;
+  }
   &__left {
     padding: $vertical-gutter-width $padding-small-horizontal*5;
     &:after {
