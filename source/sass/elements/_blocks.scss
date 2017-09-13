@@ -43,3 +43,18 @@
     }
   }
 }
+@media(min-width: 720px) {
+  .views-element-container {
+    &.block-views-blocklatest-events-latest-event{
+      .form-group { margin: 0;}
+    }
+    .form-group {
+      margin-top: 0;
+      .normal-page{
+        .normal-page__teaser-content {
+          padding:  $grid-gutter-width/2 0;
+        }
+      }
+    }
+  }
+}
