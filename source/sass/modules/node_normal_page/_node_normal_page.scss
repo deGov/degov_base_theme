@@ -1,7 +1,7 @@
 .region-sidebar-second .normal-page {
   .normal-page__teaser-content {
     @include make-sm-column(12);
-    padding-top: $grid-gutter-width/2;
+    padding: $grid-gutter-width/2;
     max-height: none;
   }
   &.preview,

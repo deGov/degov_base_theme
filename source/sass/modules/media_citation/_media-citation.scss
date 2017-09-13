@@ -8,7 +8,7 @@
     border: 0;
   }
   &__left {
-    padding: $vertical-gutter-width $padding-small-horizontal*5;
+    padding: $vertical-gutter-width/4*3 $padding-small-horizontal*5;
     &:after {
       @include triangle-right($color: $color-white);
       right: -15px;
