@@ -121,7 +121,30 @@ form.webform-submission-form{
     }
   }
 }
-
+.block-simplenews{
+  .btn {
+    &-default{
+      background: transparent;
+      border: 0px solid $brand-secondary;
+      color: $brand-secondary;
+      float: right;
+      margin-right: 0;
+      padding-right: 0;
+      font-size: $font-size-small;
+      font-weight: bold;
+      @include icon-after($fa-var-paper-plane);
+      &:focus{
+        border: 1px dotted $brand-secondary;
+      }
+      &:after{
+        color: white;
+        padding: $grid-gutter-width/4;
+        background-color: $nrw-green;
+        font-size: $font-size-base;
+      }
+    }
+  }
+}
 .reset-form{
   display: inline-block;
   position: relative;
