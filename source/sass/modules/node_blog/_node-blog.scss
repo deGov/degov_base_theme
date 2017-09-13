@@ -19,16 +19,6 @@
       font-size: $font-size-h4;
       font-weight: bold;
     }
-    &:after {
-      width: 0px;
-      height: 0px;
-      border-left: 15px solid transparent;
-      border-right: 15px solid transparent;
-      border-top: 15px solid $brand-primary;
-      position: relative;
-      top: 58px;
-      left: $grid-gutter-width/2;
-      content: '';
-    }
+
   }
 }

@@ -81,10 +81,23 @@ article.small-image{
   }
 
 }
+.path-frontpage{
+  .full{
+    .header{
+      display: none;
+    }
+  }
+}
+
 .full{
+  &.event{
+    .header{
+      margin-top: -1*($grid-gutter-width/5.71);
+    }
+  }
   .header{
     position: relative;
-    margin: 0 -1*($grid-gutter-width/2);
+    margin: 0 -1*($grid-gutter-width/2) $grid-gutter-width/2.66;
     background: $brand-primary;
     padding: 0 $grid-gutter-width/2 $grid-gutter-width/2;
     .media-video{
