@@ -319,6 +319,13 @@
 	      });
 	    }
 	  };
+
+	  // Move popup always at the beginning at the dom.
+	  Drupal.behaviors.MoveEuCookieCompliancePopup = {
+	    attach: function attach(context, settings) {
+	      $('#sliding-popup').once('sliding-popup-moved').prependTo('body');
+	    }
+	  };
 	})(jQuery, window.Drupal);
 
 /***/ }),
