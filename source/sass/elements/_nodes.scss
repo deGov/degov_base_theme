@@ -120,7 +120,7 @@ article.small-image{
     .header-image__image{
     }
     .sharing{
-      margin-top: $grid-gutter-width/6;
+      padding-top: $grid-gutter-width/6;
     }
     &:after{
       @include triangle-down;
