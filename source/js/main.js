@@ -273,4 +273,11 @@ const PhotoSwipeUiDefault = require('photoswipe/dist/photoswipe-ui-default');
     }
   };
 
+  // Move popup always at the beginning at the dom.
+  Drupal.behaviors.MoveEuCookieCompliancePopup = {
+    attach: function (context, settings) {
+      $('#sliding-popup').once('sliding-popup-moved').prependTo('body');
+    }
+  };
+
 })(jQuery, window.Drupal);
