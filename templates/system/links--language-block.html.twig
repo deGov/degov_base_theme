@@ -47,8 +47,10 @@
   </select>
   <a class="selector">{{ current_language }} <i class="fa fa-angle-down" aria-hidden="true"></i></a>
   <ul id="options" class="options is-hidden" >
-    {%- for link in links -%}
-      <li>{{ link }}</li>
+    {%- for key, link in links -%}
+      <li>
+        {{ link.link }}
+      </li>
     {%- endfor -%}
   </ul>
 </form>
