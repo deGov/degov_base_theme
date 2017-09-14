@@ -36,9 +36,6 @@
 
 .paragraph.nav-list{
   article{
-    float: left;
-    margin-top: $padding-large-vertical + 5;
-    -webkit-font-smoothing: antialiased;
     &:before{
       float: left;
       min-height: 32px;
