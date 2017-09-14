@@ -1,5 +1,6 @@
 .media-contact{
-    font-size: $font-size-h6;
+    font-size: $font-size-base;
+    line-height: 1.3;
     word-break: break-all;
     hyphens: auto;
     margin: -1*($grid-gutter-width/2);
@@ -12,6 +13,7 @@
     }
     &__title{
         font-weight: bold;
+        font-size: $font-size-h4;
     }
     &__image-wrapper{
         padding: 0;
@@ -23,7 +25,6 @@
         }
         a{
             color: $color-white;
-            font-weight: normal;
         }
     }
     .image__caption,.image__copyright{
@@ -36,6 +37,9 @@ aside{
         &__position{
             display: none;
         }
+        &__info a{
+            font-weight: normal;
+        }
     }
 }
 .region-content{
@@ -46,9 +50,8 @@ aside{
         margin: $grid-gutter-width/2 -1*($grid-gutter-width/2) 0;
         border-bottom: 1px solid $color-gray;
         &__image-wrapper{
-           @include make-md-column(3);
+           @include make-md-column(4);
            margin-bottom: 0;
-           min-height: 200px;
         }
         &__position{
             color: $brand-secondary;
@@ -63,7 +66,7 @@ aside{
             flex-direction: column;
             justify-content: center;
             align-self: center;
-            @include make-md-column(9);
+            @include make-md-column(8);
             a{
               color: $brand-secondary;
             }
