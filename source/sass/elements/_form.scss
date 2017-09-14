@@ -121,7 +121,42 @@ form.webform-submission-form{
     }
   }
 }
+.block-simplenews{
+  .btn {
+    &[data-drupal-selector="edit-subscribe"]{
+      @include icon-after($fa-var-paper-plane);
+      &:after{
+        color: white;
+        padding: $grid-gutter-width/4;
+        background-color: $nrw-green;
+        font-size: $font-size-base;
+      }
+    }
+    &[data-drupal-selector="edit-unsubscribe"]{
+      @include icon-after($fa-var-times);
+      &:after{
+        color: white;
+        padding: $grid-gutter-width/4;
+        background-color: $brand-primary;
+        font-size: $font-size-base;
+      }
+    }
+    &-default{
+      background: transparent;
+      border: 0px solid $brand-secondary;
+      color: $brand-secondary;
+      float: right;
+      margin-right: 0;
+      padding-right: 0;
+      font-size: $font-size-small;
+      font-weight: bold;
+      &:focus{
+        border: 1px dotted $brand-secondary;
+      }
 
+    }
+  }
+}
 .reset-form{
   display: inline-block;
   position: relative;

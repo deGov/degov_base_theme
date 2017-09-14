@@ -15,6 +15,9 @@ body{
   background: $color-white;
   //padding-bottom: $vertical-gutter-width;
   position: relative;
+  .col-sm-9{
+    border-right: 1px solid $nrw-light;
+  }
 }
 .main-container .region-header {
   position: absolute;
