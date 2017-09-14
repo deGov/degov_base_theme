@@ -12,16 +12,15 @@
 
 
 // Press list - slider view
-.press-slider {
-  .press__latest_wrapper {
-    padding: $grid-gutter-width/2;
-    a {
-      text-decoration: none;
-      cursor: default;
-      &:focus,
-      &:active {
-        outline: none;
-      }
+
+.press__latest_wrapper {
+  padding: $grid-gutter-width/2;
+  a {
+    text-decoration: none;
+    cursor: default;
+    &:focus,
+    &:active {
+      outline: none;
     }
   }
   .press__teaser-date {
@@ -48,5 +47,11 @@
     a {
       cursor: pointer;
     }
+  }
+}
+
+.region-sidebar-second{
+  .press__latest_wrapper {
+    padding: $grid-gutter-width/4 0;
   }
 }
