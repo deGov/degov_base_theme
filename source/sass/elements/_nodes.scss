@@ -44,9 +44,6 @@ article.slim {
     max-height: 320px;
     padding: 20px;
     overflow: hidden;
-    h3{
-      font-weight: bold;
-    }
   }
   &:nth-child(4n-2),&:nth-child(4n-3){
     .teaser-image{
@@ -57,7 +54,7 @@ article.slim {
       }
     }
   }
-   &:nth-child(4n-1),&:nth-child(4n){
+  &:nth-child(4n-1),&:nth-child(4n){
     .teaser-image{
       float: right;
       &:after{
@@ -89,12 +86,23 @@ article.small-image{
   }
   .teaser-content{
     padding: $grid-gutter-width/2;
-    h3{
-      font-weight: bold;
-    }
   }
 
 }
+
+article.preview,
+article.long-text,
+article.small-image,
+article.slim{
+  .teaser-title h3 {
+    font-size: $font-size-h2;
+    font-weight: bold;
+  }
+  .blog__teaser-text {
+    font-size: $font-size-h6;
+  }
+}
+
 .path-frontpage{
   .full{
     .header{
@@ -120,7 +128,7 @@ article.small-image{
     .header-image__image{
     }
     .sharing{
-      margin-top: $grid-gutter-width/6;
+      padding-top: $grid-gutter-width/6;
     }
     &:after{
       @include triangle-down;
