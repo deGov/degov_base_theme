@@ -4,7 +4,8 @@
     font-size: $font-size-h2;
     line-height: $font-size-h2;
     font-weight: bold;
-    &:hover{
+    &:hover,
+    &:focus{
       background: initial;
       text-decoration: underline;
       color: $brand-primary;
@@ -46,7 +47,8 @@
         }
         background: rgba(27, 66, 101, 0.2);
         margin-right: $grid-gutter-width/8;
-        &:hover{
+        &:hover,
+        &:focus{
           background: rgba(27, 66, 101, 0.2);
           text-decoration: underline;
         }
@@ -68,7 +70,8 @@ nav .pager{
     font-size: $font-size-h2;
     line-height: $font-size-h2;
     font-weight: bold;
-    &:hover{
+    &:hover,
+    &:focus{
       background: rgba(27, 66, 101, 0.2);
       text-decoration: underline;
       color: $brand-primary;

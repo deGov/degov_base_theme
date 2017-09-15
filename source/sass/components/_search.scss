@@ -204,7 +204,8 @@
         .date-filter{
           float: right;
           border: 0;
-          &:hover{
+          &:hover,
+          &:focus{
             background: transparent;
           }
           span{

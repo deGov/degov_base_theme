@@ -90,9 +90,13 @@
       }
     }
   }
-  &:hover {
+  &:hover,
+  &:focus {
     .tweet__actions li a {
       color: $color-gray;
     }
+  }
+  .tweet__actions li a:focus {
+    color: $color-gray;
   }
 }

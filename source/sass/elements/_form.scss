@@ -50,13 +50,15 @@ form.webform-submission-form{
     background-color: rgba($nrw-secondary, 0.1);
     border-radius: 0;
     border: 0;
-    &:hover{
+    &:hover,
+    &:focus{
       border: 0;
     }
   }
   .selectric{
     background-color: rgba($nrw-secondary, 0.1);
-    &:hover{
+    &:hover,
+    &:focus{
       border: 0;
     }
     .label{
@@ -87,7 +89,8 @@ form.webform-submission-form{
       li{
         color: $color-white;
         background-color: rgba($nrw-secondary, 1);
-        &:hover{
+        &:hover,
+        &:focus{
           background-color: rgba($nrw-secondary, 0.1);
           color: $text-color;
         }
@@ -190,7 +193,8 @@ form.webform-submission-form{
 .selectric-wrapper{
   .selectric{
     background-color: rgba($nrw-secondary, 0);
-    &:hover{
+    &:hover,
+    &:focus{
       border: 0;
     }
     .label{
@@ -220,7 +224,8 @@ form.webform-submission-form{
       li{
         color: $color-white;
         background-color: rgba($nrw-secondary, 1);
-        &:hover{
+        &:hover,
+        &:focus{
           background-color: rgba($nrw-secondary, 0.1);
           color: $text-color;
         }
