@@ -6,7 +6,7 @@ body{
 .container-fluid{
   max-width: 1280px;
   margin: 0 auto;
-  
+
 }
 .main-wrapper {
   background-color: $background-grey;
@@ -103,7 +103,8 @@ table {
 }
 
 .media{
-  &:hover{
+  &:hover,
+  &:focus{
     > .contextual{
       @include icon-after($fa-var-file-image-o);
       &:after{
@@ -123,7 +124,8 @@ table {
         z-index: 2;
         background-image: none;
         background-color: transparent;
-        &:hover{
+        &:hover,
+        &:focus{
           background-image: none;
         }
       }
@@ -131,7 +133,8 @@ table {
   }
 }
 article,.paragraph{
-  &:hover{
+  &:hover,
+  &:focus{
     > .contextual{
       @include icon-after($fa-var-font);
       &:after{
@@ -151,10 +154,11 @@ article,.paragraph{
         z-index: 2;
         background-image: none;
         background-color: transparent;
-        &:hover{
+        &:hover,
+        &:focus{
           background-image: none;
         }
-        
+
       }
     }
   }

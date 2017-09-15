@@ -168,7 +168,8 @@
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
-    &:hover{
+    &:hover,
+    &:focus{
       text-decoration: none;
     }
     &.is-active {
@@ -210,7 +211,8 @@
           font-size: $font-size-h4;
         }
       }
-      &:hover{
+      &:hover,
+      &:focus{
         background: $brand-secondary;
         color: $color-white;
         i{
@@ -247,7 +249,7 @@
     }
   }
   &__col{
-    padding: 10px;
+    padding: $grid-gutter-width/4 $grid-gutter-width/2;
     display: none;
     &.is-active{
       display: block;
@@ -259,7 +261,8 @@
       }
 
     }
-    &:hover{
+    &:hover,
+    &:focus{
       background-color: $brand-primary;
     }
   }
@@ -324,6 +327,7 @@
         font-family: $font-family-sans-serif;
         text-transform: uppercase;
         &:hover,
+        &:focus,
         &:active {
           &,
           .sub-title {
@@ -468,7 +472,8 @@
         vertical-align: bottom;
         margin-top: 6px;
       }
-      &:hover {
+      &:hover,
+      &:focus {
         background: $color-white;
         border: none;
         &:before {

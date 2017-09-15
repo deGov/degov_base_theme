@@ -52,6 +52,7 @@
     border-radius: 0;
     padding: 0 0 0 $padding-small-horizontal;
     &:hover,
+    &:focus,
     &:active {
       box-shadow: none;
       &:focus {

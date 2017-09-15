@@ -3,6 +3,8 @@
     margin: $padding-small-horizontal*-2;
   }
   .view-footer {
+    position: relative;
+    z-index: 10;
     a {
       padding-right: $padding-base-horizontal;
       color: $brand-primary;
