@@ -80,9 +80,10 @@
   .video__description,
   .video__description {
     font-size: $font-size-h4;
+    padding-bottom: $vertical-gutter-width/2;
   }
   .tags {
-    padding: $vertical-gutter-width/2 0 $vertical-gutter-width 0;
+    padding: 0 0 $vertical-gutter-width 0;
     font-size: $font-size-small;
     &:before {
       position: initial;
@@ -97,6 +98,7 @@
       background: $nrw-light;
       font-weight: bold;
       padding: $padding-large-vertical $grid-gutter-width/2;
+      cursor: pointer;
       i {
         width: 2em;
         vertical-align: middle;
@@ -116,6 +118,11 @@
         display: none;
       }
     }
+  }
+  .video__assets,
+  .video-upload__assets {
+    padding: $vertical-gutter-width/2 0;
+    font-size: $font-size-small;
   }
   .video-upload__downloads {
     float: right;
