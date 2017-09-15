@@ -182,7 +182,7 @@
       }
     }
     .selectric{
-      background-color: white;;
+      background-color: white;
     }
     .panel{
       background: transparent;
@@ -232,6 +232,16 @@
       }
     }
   }
+}
+
+#block-degovsearchcontentfilter .block-degov-search-content-filter > .panel-heading {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+  display: block;
 }
 
 .search-api-sorts{
