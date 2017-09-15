@@ -34,6 +34,7 @@
     width: 100%;
     height: auto;
   }
+
 }
 
 // Add alignment exception per region.
@@ -83,16 +84,33 @@
       padding-right: $padding-xs-horizontal;
     }
   }
-
+  .image__extra-info {
+    background: $nrw-secondary;
+    padding: $grid-gutter-width/2;
+    font-size: $font-size-h4;
+    .file {
+      float: right;
+      background: $color-white;
+      padding: $padding-large-horizontal/2;
+      &,
+      a {
+        color: $nrw-secondary;
+      }
+    }
+  }
+  .image__date {
+    display: inline-block;
+    margin: $padding-base-vertical*3 0;
+  }
+  .image__description {
+    clear: both;
+  }
   .tags {
-    color: $brand-primary;
-    background-color: $nrw-light;
     padding-top: $padding-xs-horizontal;
     padding-right: $padding-xs-horizontal;
     padding-bottom: $padding-xs-horizontal;
-
+    margin-top: $padding-large-vertical;
     &:before {
-      color: $brand-primary;
       padding-top: $padding-xs-horizontal;
       padding-left: $padding-xs-horizontal;
     }
