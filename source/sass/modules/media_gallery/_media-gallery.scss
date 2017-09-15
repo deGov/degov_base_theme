@@ -15,8 +15,8 @@
   }
 
   &__info {
-    padding: $vertical-gutter-width/2 $grid-gutter-width/2 $vertical-gutter-width $grid-gutter-width/2;
-    background: $brand-primary;
+    padding: $vertical-gutter-width/2 $grid-gutter-width/2 $grid-gutter-width/4 $grid-gutter-width/2;
+    background: $brand-secondary;
     color: $color-white;
     font-size: $font-size-h4;
   }
@@ -43,10 +43,29 @@
   .media-image {
     margin: 0;
   }
+  .tags {
+    background: $brand-secondary;
+    color: $color-white;
+    font-size: $font-size-small;
+    padding: 0 $grid-gutter-width/2 $grid-gutter-width*0.8 $grid-gutter-width/2;
+    &:before {
+      position: initial;
+      font-size: $font-size-h3;
+    }
+  }
 
   .slideshow__slides {
     article {
       margin-top: 0;
+    }
+    .image__date {
+      display: none;
+    }
+    .image__info {
+      padding: $padding-base-vertical $grid-gutter-width/2;
+      .image__caption {
+        background: rgba($gray-dark, 0.7);
+      }
     }
   }
 }

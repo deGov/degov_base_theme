@@ -65,3 +65,14 @@ $tag-font-size: 12px;
     }
   }
 }
+.media .tags > a {
+  padding-right: $padding-xs-horizontal;
+  &:after{
+    content: ',';
+  }
+  &:last-child{
+    &:after{
+      content: '';
+    }
+  }
+}
