@@ -249,7 +249,7 @@
     }
   }
   &__col{
-    padding: 10px;
+    padding: $grid-gutter-width/4 $grid-gutter-width/2;
     display: none;
     &.is-active{
       display: block;
