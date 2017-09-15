@@ -48,7 +48,9 @@ aside{
         background-color: $color-white;
         color: $text-color;
         margin: 0;
-        border-bottom: 1px solid $color-gray;
+        + .media-contact {
+            border-top: 1px solid $color-gray;
+        }
         &__image-wrapper{
            @include make-md-column(4);
            margin-bottom: 0;
