@@ -58,3 +58,24 @@
     }
   }
 }
+
+.block-search-api-sorts{
+  h2{
+    margin:0;
+    font-size: $font-size-base;
+    padding-top: $grid-gutter-width/8;
+    display: inline-block;
+  }
+}
+.view-search-content{
+  .view-header{
+    text-align: right;
+    h2{
+      float: left;
+      margin:0;
+      font-size: $font-size-base;
+      padding-top: $grid-gutter-width/8;
+      display: inline-block;
+    }
+  }
+}
