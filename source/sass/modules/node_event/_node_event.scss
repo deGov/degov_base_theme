@@ -41,6 +41,11 @@
     line-height: $line-height-base;
     font-weight: bold;
   }
+  @media(max-width:$screen-sm) {
+    .event__teaser-text {
+      padding: $grid-gutter-width/2 0 0 0;
+    }
+  }
 }
 
 /* Teaser & Latest mode */
