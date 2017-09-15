@@ -43,16 +43,6 @@
   .media-image {
     margin: 0;
   }
-  .tags {
-    background: $brand-secondary;
-    color: $color-white;
-    font-size: $font-size-small;
-    padding: 0 $grid-gutter-width/2 $grid-gutter-width*0.8 $grid-gutter-width/2;
-    &:before {
-      position: initial;
-      font-size: $font-size-h3;
-    }
-  }
 
   .slideshow__slides {
     article {
@@ -65,6 +55,7 @@
       padding: $padding-base-vertical $grid-gutter-width/2;
       .image__caption {
         background: rgba($gray-dark, 0.7);
+        float: right;
       }
     }
   }
@@ -73,6 +64,16 @@
 .media-gallery.view-mode-full {
   margin-left: $grid-gutter-width/-2;
   margin-right: $grid-gutter-width/-2;
+  .tags {
+    background: $brand-secondary;
+    color: $color-white;
+    font-size: $font-size-small;
+    padding: 0 $grid-gutter-width/2 $grid-gutter-width*0.8 $grid-gutter-width/2;
+    &:before {
+      position: initial;
+      font-size: $font-size-h3;
+    }
+  }
 }
 
 // For view mode preview
