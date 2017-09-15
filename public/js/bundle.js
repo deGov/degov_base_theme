@@ -233,9 +233,11 @@
 	      $('.language').once('language-selector').each(function () {
 	        // Open/Close the language menu on click.
 	        $(this).find('a.selector').click(function () {
-	          $('.language .options').toggleClass('is-open is-hidden');
+	          if (!$('.language .options').hasClass('is-open')) {
+	            $('.language .options').toggleClass('is-open is-hidden');
+	          }
 	        });
-	        // Open the language menu on tab focus.
+	        // Open the language menu on tab focus, triggerred by click as well.
 	        $(this).find('a').on('focusin', function (e) {
 	          // Do not open the language menu in case it is already open.
 	          // We have to do this extra check to support keyboard back tabbing.
