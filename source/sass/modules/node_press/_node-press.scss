@@ -10,6 +10,37 @@
   }
 }
 
+// Teaser
+
+.press__teaser {
+  &-date-left {
+    text-align: right;
+    font-size: 54px;
+    line-height: 54px;
+    color: $brand-primary;
+  }
+  &__day {
+    margin-top: $grid-gutter-width/4;
+    margin-bottom: $grid-gutter-width/2;
+  }
+  &__month{
+    font-weight: bold;
+    color: $brand-primary;
+    margin-top: $grid-gutter-width/4;
+    margin-bottom: $grid-gutter-width/4;
+    font-size: $font-size-base - 2;
+    line-height: $font-size-base;
+  }
+  h3{
+    font-weight: bold;
+    line-height: $font-size-h3;
+  }
+  @media(max-width:$screen-sm) {
+    .press__teaser-text {
+      padding: $grid-gutter-width/2 0 0 0;
+    }
+  }
+}
 
 // Press list - slider view
 
