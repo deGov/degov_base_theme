@@ -45,8 +45,8 @@
       {% endif %}
     {%- endfor -%}
   </select>
-  <a class="selector">{{ current_language }} <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-  <ul id="options" class="options is-hidden" >
+  <a class="selector" tabindex="0">{{ current_language }} <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+  <ul id="options" class="options is-hidden">
     {%- for key, link in links -%}
       <li>
         {{ link.link }}
