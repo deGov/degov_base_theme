@@ -94,6 +94,7 @@
   .video-upload__transcription,
   .video__transcription {
     color: $brand-secondary;
+    clear: both;
     &__header {
       background: $nrw-light;
       font-weight: bold;
