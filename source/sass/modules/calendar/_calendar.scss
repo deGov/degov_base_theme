@@ -63,7 +63,8 @@
           color: $color-white;
         }
         &.has-events{
-          &:hover{
+          &:hover,
+          &:focus{
             background: $nrw-green;
           }
         }
@@ -150,7 +151,8 @@
           &.ui-state-default{
             border: 0;
             background: none;
-            &:hover{
+            &:hover,
+            &:focus {
               background: $nrw-green;
               color: $color-white;
             }
