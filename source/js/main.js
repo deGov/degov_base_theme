@@ -22,7 +22,6 @@ const PhotoSwipeUiDefault = require('photoswipe/dist/photoswipe-ui-default');
     }
   };
 
-
   // Footer menu open in responsive
   Drupal.behaviors.footerResposive = {
     attach: function (context, settings) {
@@ -178,12 +177,31 @@ const PhotoSwipeUiDefault = require('photoswipe/dist/photoswipe-ui-default');
     }
   };
 
-  // language selector
+  /**
+   * Language selection behavior.
+   */
   Drupal.behaviors.languageSelector = {
     attach: function (context, settings) {
       $('.language').once('language-selector').each(function () {
+        // Open/Close the language menu on click.
         $(this).find('a.selector').click(function () {
-          $('.language .options').toggleClass('is-open is-hidden');
+          if (!$('.language .options').hasClass('is-open')) {
+            $('.language .options').toggleClass('is-open is-hidden');
+          }
+        });
+        // Open the language menu on tab focus, triggerred by click as well.
+        $(this).find('a').on('focusin', function(e) {
+          // Do not open the language menu in case it is already open.
+          // We have to do this extra check to support keyboard back tabbing.
+          if (!$('.language .options').hasClass('is-open')) {
+            $('.language .options').toggleClass('is-open is-hidden');
+          }
+        });
+        // Close the language menu on focus out of the language items.
+        $(this).find('a').on('blur', function(e) {
+          if (!$(e.relatedTarget).hasClass('language-link')) {
+            $('.language .options').toggleClass('is-open is-hidden');
+          }
         });
       });
     }
