@@ -23,7 +23,7 @@
     left: 0;
     right: 0;
     & > div {
-      //display: inline;
+      display: inline;
     }
   }
   &__caption,
@@ -57,10 +57,8 @@
 
 .media-video.view-mode-full,
 .media-video-upload.view-mode-full {
-  .video__caption,
-  .video-upload__caption,
-  .video__copyright,
-  .video-upload__copyright {
+  .video__info__wrap,
+  .video-upload__info__wrap {
     background: rgba($gray-dark, 0.7);
   }
   .video-upload__extra-info,
@@ -72,6 +70,12 @@
   .video__duration {
     font-weight: bold;
     padding: $padding-large-vertical 0;
+  }
+  .video__date,
+  .video-upload__date {
+    padding-top: $padding-base-vertical;
+    padding-bottom: $vertical-gutter-width/2;
+    font-size: $font-size-h4;
   }
   .video__description,
   .video__description {
@@ -110,6 +114,19 @@
       line-height: 1.5;
       &.closed {
         display: none;
+      }
+    }
+  }
+  .video-upload__downloads {
+    float: right;
+    .file {
+      width: 100%;
+      background: $color-white;
+      padding: $padding-large-horizontal/2;
+      margin-bottom: $padding-large-vertical;
+      &,
+      a {
+        color: $nrw-secondary;
       }
     }
   }
