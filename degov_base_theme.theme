@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Bootstrap sub-theme for nrwGov.
+ * Bootstrap sub-theme for deGov.
  */
 
 use Drupal\Core\Url;
@@ -9,7 +9,7 @@ use Drupal\Core\Url;
 /**
  * Implements hook_theme_suggestion_input_alter().
  */
-function nrw_base_theme_theme_suggestions_input_alter(&$suggestions, &$vars, $hook) {
+function degov_base_theme_theme_suggestions_input_alter(&$suggestions, &$vars, $hook) {
   // Add addition template suggestion for input fields.
   $element = $vars['element'];
   if (isset($element['#attributes']['data-twig-suggestion'])) {
@@ -20,7 +20,7 @@ function nrw_base_theme_theme_suggestions_input_alter(&$suggestions, &$vars, $ho
 /**
  * Implements hook_form_alter().
  */
-function nrw_base_theme_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+function degov_base_theme_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   // Add additional attributes to the search page elements.
   if ($form['#id'] == 'views-exposed-form-search-content-page-1' || $form['#id'] == 'views-exposed-form-search-media-manager-page' || $form['#id'] == 'views-exposed-form-search-media-page') {
     $form['actions']['submit']['#attributes']['data-twig-suggestion'] = 'search_results_submit';
@@ -31,7 +31,7 @@ function nrw_base_theme_form_alter(&$form, \Drupal\Core\Form\FormStateInterface 
 /**
  * Implements hook_preprocess_links__HOOK().
  */
-function nrw_base_theme_preprocess_links__language_block(&$variables) {
+function degov_base_theme_preprocess_links__language_block(&$variables) {
   $variables['current_language'] = \Drupal::languageManager()->getCurrentLanguage()->getId();
 
   foreach ($variables['links'] as $key => $item) {
@@ -48,7 +48,7 @@ function nrw_base_theme_preprocess_links__language_block(&$variables) {
 * Implements hook_preprocess_html()
 * @param $vars
 */
-function nrw_base_theme_preprocess_html(&$vars) {
+function degov_base_theme_preprocess_html(&$vars) {
   if (isset($_GET['print'])) {
     //echo $_GET['print'];
     $vars['print'] = "print";
@@ -58,7 +58,7 @@ function nrw_base_theme_preprocess_html(&$vars) {
 /**
  * Implements hook_preprocess_page().
  */
-function nrw_base_theme_preprocess_page(&$variables) {
+function degov_base_theme_preprocess_page(&$variables) {
   // Check how many languages are used.
   $languages = \Drupal::languageManager()->getLanguages();
   if (count($languages) <= 1) {
@@ -77,14 +77,14 @@ function nrw_base_theme_preprocess_page(&$variables) {
  *
  * @param $variables
  */
-function nrw_base_theme_preprocess_swiftmailer(&$variables) {
+function degov_base_theme_preprocess_swiftmailer(&$variables) {
   $variables['mail_date'] = time();
 }
 
 /**
  * Implements hook_preprocess_menu_local_task().
  */
-function nrw_base_theme_preprocess_menu_local_task(&$variables) {
+function degov_base_theme_preprocess_menu_local_task(&$variables) {
   if (empty($variables['link']['#options']['attributes']['title'])) {
     $variables['link']['#options']['attributes']['title'] = $variables['element']['#link']['title'];
   }

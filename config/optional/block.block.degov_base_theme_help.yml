@@ -4,12 +4,12 @@ dependencies:
   module:
     - help
   theme:
-    - nrw_base_theme
+    - degov_base_theme
   enforced:
     theme:
-      - nrw_base_theme
-id: nrw_base_theme_help
-theme: nrw_base_theme
+      - degov_base_theme
+id: degov_base_theme_help
+theme: degov_base_theme
 region: content
 weight: -5
 provider: null

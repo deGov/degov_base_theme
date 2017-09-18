@@ -2,12 +2,12 @@ langcode: de
 status: true
 dependencies:
   theme:
-    - nrw_base_theme
+    - degov_base_theme
   enforced:
     theme:
-      - nrw_base_theme
-id: nrw_base_theme_page_title
-theme: nrw_base_theme
+      - degov_base_theme
+id: degov_base_theme_page_title
+theme: degov_base_theme
 region: header_region
 weight: -4
 provider: null

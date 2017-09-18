@@ -4,7 +4,7 @@
 }
 
 .media--preview__text-block {
-  background-color: $nrw-primary;
+  background-color: $degov-primary;
   .tags {
     a {
       color: $color-white;
@@ -76,7 +76,7 @@
     &:nth-child(4n-2),&:nth-child(4n-3){
       .teaser-image{
         &:after{
-          @include triangle-left($nrw-primary);
+          @include triangle-left($degov-primary);
           top: 15px;
           right: 0;
         }
@@ -88,7 +88,7 @@
       }
       .teaser-image{
         &:after{
-          @include triangle-right($nrw-primary);
+          @include triangle-right($degov-primary);
           top: 15px;
         }
       }

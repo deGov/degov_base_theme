@@ -306,7 +306,7 @@
 .slideshow-with-prev-next {
   .slides_prev_next {
     @include smaller-than($screen-sm-max) {
-      background-color: $nrw-primary;
+      background-color: $degov-primary;
     }
     .slide {
       position: relative;
@@ -332,7 +332,7 @@
         margin: 0 auto;
         padding: 30px 150px;
         overflow: auto;
-        background-color: rgba($nrw-primary, .8);
+        background-color: rgba($degov-primary, .8);
         color: $color-white;
         @include smaller-than($screen-md-max) {
           padding-right: 120px;

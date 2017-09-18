@@ -1,6 +1,6 @@
 {
-  "name": "degov/nrw_theme",
-  "description": "deGov - NRW Theme",
+  "name": "degov/degov_theme",
+  "description": "deGov - Subtheme",
   "require": {
     "drupal/bootstrap": "^3.3"
   }

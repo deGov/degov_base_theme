@@ -162,7 +162,7 @@
     display: inline-block;
     height: 80px;
     width: 160px;
-    border-right: 1px solid $nrw-light;
+    border-right: 1px solid $degov-light;
     float: left;
     font-size: $font-size-small - 2;
     font-weight: bold;
@@ -175,7 +175,7 @@
     &.is-active {
       &:after{
         @include triangle-up($size: 10px);
-        border-bottom-color: $nrw-secondary;
+        border-bottom-color: $degov-secondary;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
@@ -203,8 +203,8 @@
       }
     }
     &.menu-search{
-      border-right: 0px solid $nrw-light;
-      border-left: 1px solid $nrw-light;
+      border-right: 0px solid $degov-light;
+      border-left: 1px solid $degov-light;
       float: right;
       i{
         &:before{
@@ -240,7 +240,7 @@
     flex-direction: row;
     -webkit-flex-flow: row wrap;
     justify-content: flex-start;
-    background-color: $nrw-secondary;
+    background-color: $degov-secondary;
     @media(max-width: 720px){
       display: none;
     }
@@ -345,7 +345,7 @@
       min-height: 210px;
       width: 24%;
       float: right;
-      background-color: $nrw-secondary;
+      background-color: $degov-secondary;
       padding: $padding-base-horizontal + 5;
       color: $color-white;
       p{
@@ -537,7 +537,7 @@
     }
   }
   &__block > &__block-title {
-    border-top: 1px solid $nrw-light;
+    border-top: 1px solid $degov-light;
     padding: $padding-large-vertical 0;
   }
   &__block-title, &__title{
@@ -562,7 +562,7 @@
     }
     input {
       border: none;
-      background: $nrw-light;
+      background: $degov-light;
       padding: $padding-large-vertical $padding-xs-horizontal;
       width: 100%;
       font-size: $font-size-h6;
@@ -575,7 +575,7 @@
       font-size: 0px;
       letter-spacing: -1px;
       color: transparent;
-      background: $nrw-green;
+      background: $degov-green;
       border: none;
       width: 42px;
       text-align: center;
@@ -593,7 +593,7 @@
     margin: 0 $grid-gutter-width/-2;
     padding-left: $grid-gutter-width/2;
     padding-right: $grid-gutter-width/2;
-    background: $nrw-light;
+    background: $degov-light;
     i {
       width: $font-size-h2;
       vertical-align: sub;

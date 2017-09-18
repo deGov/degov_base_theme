@@ -47,7 +47,7 @@ form.webform-submission-form{
     }
   }
   input, textarea, select{
-    background-color: rgba($nrw-secondary, 0.1);
+    background-color: rgba($degov-secondary, 0.1);
     border-radius: 0;
     border: 0;
     &:hover,
@@ -56,7 +56,7 @@ form.webform-submission-form{
     }
   }
   .selectric{
-    background-color: rgba($nrw-secondary, 0.1);
+    background-color: rgba($degov-secondary, 0.1);
     &:hover,
     &:focus{
       border: 0;
@@ -88,14 +88,14 @@ form.webform-submission-form{
 
       li{
         color: $color-white;
-        background-color: rgba($nrw-secondary, 1);
+        background-color: rgba($degov-secondary, 1);
         &:hover,
         &:focus{
-          background-color: rgba($nrw-secondary, 0.1);
+          background-color: rgba($degov-secondary, 0.1);
           color: $text-color;
         }
         &.selected{
-          background-color: rgba($nrw-secondary, 0.1);
+          background-color: rgba($degov-secondary, 0.1);
           color: $text-color;
         }
       }
@@ -118,7 +118,7 @@ form.webform-submission-form{
       &:after{
         color: white;
         padding: $grid-gutter-width/4;
-        background-color: $nrw-green;
+        background-color: $degov-green;
         font-size: $font-size-base;
       }
     }
@@ -131,7 +131,7 @@ form.webform-submission-form{
       &:after{
         color: white;
         padding: $grid-gutter-width/4;
-        background-color: $nrw-green;
+        background-color: $degov-green;
         font-size: $font-size-base;
       }
     }
@@ -192,7 +192,7 @@ form.webform-submission-form{
 }
 .selectric-wrapper{
   .selectric{
-    background-color: rgba($nrw-secondary, 0);
+    background-color: rgba($degov-secondary, 0);
     &:hover,
     &:focus{
       border: 0;
@@ -223,14 +223,14 @@ form.webform-submission-form{
     &-items{
       li{
         color: $color-white;
-        background-color: rgba($nrw-secondary, 1);
+        background-color: rgba($degov-secondary, 1);
         &:hover,
         &:focus{
-          background-color: rgba($nrw-secondary, 0.1);
+          background-color: rgba($degov-secondary, 0.1);
           color: $text-color;
         }
         &.selected{
-          background-color: rgba($nrw-secondary, 0.1);
+          background-color: rgba($degov-secondary, 0.1);
           color: $text-color;
         }
       }

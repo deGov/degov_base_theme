@@ -1,9 +1,9 @@
 core: 8.x
 type: theme
-base theme: nrw_base_theme
+base theme: degov_base_theme
 
-name: 'NRW - STARTER_KIT'
-description: 'Starter kit for a theme for a ressort page in NRW. Based on the deGov distribution.'
+name: 'deGov - STARTER_KIT'
+description: 'Starter kit for a theme for a ressort page in deGov. Based on the deGov distribution.'
 package: 'Bootstrap'
 
 regions:
@@ -16,5 +16,5 @@ libraries:
   - 'STARTER_KIT/theme-assets'
 
 stylesheets-remove:
-  - 'themes/nrw/nrw_base_theme/public/css/bootstrap.css'
-  - 'themes/nrw/nrw_base_theme/public/css/style.css'
+  - 'themes/degov/degov_base_theme/public/css/bootstrap.css'
+  - 'themes/degov/degov_base_theme/public/css/style.css'

@@ -16,7 +16,7 @@ body{
   //padding-bottom: $vertical-gutter-width;
   position: relative;
   .col-sm-9{
-    border-right: 1px solid $nrw-light;
+    border-right: 1px solid $degov-light;
   }
 }
 .main-container .region-header {
@@ -47,13 +47,13 @@ table {
     }
   }
   tr:nth-child(even) {
-    background: $nrw-light;
+    background: $degov-light;
   }
   tr:nth-child(odd) {
     background: $color-white;
   }
   tr{
-    border-bottom: 1px solid $nrw-gray;
+    border-bottom: 1px solid $degov-gray;
   }
 	td, th {
 		padding: 0.25em;

@@ -54,8 +54,8 @@
   @include calc('width', '100% + 40px');
   margin: 0 -20px;
   padding: 0 20px 20px;
-  border-bottom: 1px solid $nrw-light;
-  color: $nrw-primary;
+  border-bottom: 1px solid $degov-light;
+  color: $degov-primary;
   font-family: $font-family-sans-serif;
   vertical-align: top;
   @include smaller-than($screen-desktop) {

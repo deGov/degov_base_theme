@@ -1,3 +1,3 @@
 # README #
 
-This is the theme repository for NRW Ressortmaster based on NRWgov Drupal distribution
+This is the theme repository for deGov Ressortmaster based on deGov Drupal distribution

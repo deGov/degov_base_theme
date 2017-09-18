@@ -59,13 +59,13 @@
           color: $brand-secondary;
         }
         &.today{
-          background: $nrw-green;
+          background: $degov-green;
           color: $color-white;
         }
         &.has-events{
           &:hover,
           &:focus{
-            background: $nrw-green;
+            background: $degov-green;
           }
         }
       }
@@ -78,7 +78,7 @@
   color: $brand-secondary;
 	display: flex;
 	padding: 20px;
-	background: $nrw-light;
+	background: $degov-light;
 	margin-top: $grid-gutter-width/-2;
 	@include smaller-than($screen-xs-max){
 		word-break: break-all;
@@ -153,12 +153,12 @@
             background: none;
             &:hover,
             &:focus {
-              background: $nrw-green;
+              background: $degov-green;
               color: $color-white;
             }
           }
           &.ui-state-highlight{
-            background: $nrw-green;
+            background: $degov-green;
             color: $color-white;
           }
         }

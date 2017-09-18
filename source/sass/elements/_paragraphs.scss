@@ -17,7 +17,7 @@ div[class*="__header-paragraphs"] .paragraph a {
   display: flex;
   margin: 0 -20px;
   padding: 20px;
-  background: $nrw-light;
+  background: $degov-light;
 
   @include smaller-than($screen-xs-max){
     word-break: break-all;

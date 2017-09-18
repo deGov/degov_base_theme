@@ -96,7 +96,7 @@
     color: $brand-secondary;
     clear: both;
     &__header {
-      background: $nrw-light;
+      background: $degov-light;
       font-weight: bold;
       padding: $padding-large-vertical $grid-gutter-width/2;
       cursor: pointer;
@@ -134,7 +134,7 @@
       margin-bottom: $padding-large-vertical;
       &,
       a {
-        color: $nrw-secondary;
+        color: $degov-secondary;
       }
     }
   }

@@ -4,7 +4,7 @@
   margin-left: -$vertical-gutter-width/2;
   margin-right: -$vertical-gutter-width/2;
   color: $color-white;
-  background-color: $nrw-secondary;
+  background-color: $degov-secondary;
   padding-bottom: $vertical-gutter-width/2;
 
   img, audio {
@@ -47,7 +47,7 @@
       margin-bottom: $padding-large-vertical;
       &,
       a {
-        color: $nrw-secondary;
+        color: $degov-secondary;
       }
     }
   }
@@ -56,7 +56,7 @@
     color: $brand-secondary;
     clear: both;
     &__header {
-      background: $nrw-light;
+      background: $degov-light;
       font-weight: bold;
       padding: $padding-large-vertical $grid-gutter-width/2;
       cursor: pointer;
