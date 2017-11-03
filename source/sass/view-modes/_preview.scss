@@ -4,7 +4,7 @@
 }
 
 .media--preview__text-block {
-  background-color: $degov-primary;
+  background-color: $deGOV-secondary;
   .tags {
     a {
       color: $color-white;
@@ -76,9 +76,15 @@
     &:nth-child(4n-2),&:nth-child(4n-3){
       .teaser-image{
         &:after{
-          @include triangle-left($degov-primary);
+          @include triangle-left($deGOV-secondary);
           top: 15px;
           right: 0;
+          @media(max-width: $screen-sm-max){
+            top: auto;
+            bottom: -9px;
+            transform: rotate(90deg);
+            left: 16px;
+          }
         }
       }
     }
@@ -88,8 +94,14 @@
       }
       .teaser-image{
         &:after{
-          @include triangle-right($degov-primary);
+          @include triangle-right($deGOV-secondary);
           top: 15px;
+          @media(max-width: $screen-sm-max){
+            top: auto;
+            bottom: -9px;
+            transform: rotate(270deg);
+            left: 16px;
+          }
         }
       }
     }
@@ -97,7 +109,7 @@
 }
 
 .media--preview {
-  background-color: $brand-primary;
+  background-color: $deGOV-secondary;
   h2 {
     margin:: 0;
     font-weight:bold;
@@ -115,6 +127,9 @@
   a {
     color: $color-white;
     font-weight: normal;
+  }
+  div[class*="description"]{
+    font-size: $font-size-h6;
   }
   .image__date, .audio__date, .gallery__date, .video__date {
     padding-top: $grid-gutter-width/2;

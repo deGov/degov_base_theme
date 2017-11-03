@@ -16,7 +16,7 @@ body{
   //padding-bottom: $vertical-gutter-width;
   position: relative;
   .col-sm-9{
-    border-right: 1px solid $degov-light;
+    border-right: 1px solid $deGOV-light;
   }
 }
 .main-container .region-header {
@@ -47,13 +47,13 @@ table {
     }
   }
   tr:nth-child(even) {
-    background: $degov-light;
+    background: $deGOV-light;
   }
   tr:nth-child(odd) {
     background: $color-white;
   }
   tr{
-    border-bottom: 1px solid $degov-gray;
+    border-bottom: 1px solid $deGOV-gray;
   }
 	td, th {
 		padding: 0.25em;
@@ -176,4 +176,7 @@ article,.paragraph{
 .no-horizontal-padding {
   padding-left: 0;
   padding-right: 0;
+}
+a{
+  word-break: break-word;
 }

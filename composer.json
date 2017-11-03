@@ -1,6 +1,6 @@
 {
-  "name": "degov/degov_theme",
-  "description": "deGov - Subtheme",
+  "name": "degov/base_theme",
+  "description": "deGov - Base Theme",
   "require": {
     "drupal/bootstrap": "^3.3"
   }

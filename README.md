@@ -1,3 +1,3 @@
 # README #
 
-This is the theme repository for deGov Ressortmaster based on deGov Drupal distribution
+This is the base theme the deGov Drupal distribution

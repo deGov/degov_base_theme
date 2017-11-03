@@ -52,6 +52,12 @@
           &:after{
             @include triangle-right($color-white);
             top: 15px;
+            @media(max-width: $screen-sm-max){
+              top: auto;
+              bottom: -9px;
+              transform: rotate(270deg);
+              left: 16px;
+            }
           }
         }
       }
@@ -66,6 +72,12 @@
             border-left: none;
             top: 15px;
             right: 0px;
+            @media(max-width: $screen-sm-max){
+              top: auto;
+              bottom: -9px;
+              transform: rotate(90deg);
+              right: 16px;
+            }
           }
         }
       }
@@ -85,6 +97,12 @@
               @include triangle-left($color-white);
               top: 15px;
               right: 0;
+              @media(max-width: $screen-sm-max){
+                top: auto;
+                bottom: -9px;
+                transform: rotate(90deg);
+                right: 16px;
+              }
             }
           }
         }
@@ -102,6 +120,12 @@
               border-right: none;
               top: 15px;
               left: 0;
+              @media(max-width: $screen-sm-max){
+                top: auto;
+                bottom: -9px;
+                transform: rotate(270deg);
+                left: 16px;
+              }
             }
           }
         }

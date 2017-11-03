@@ -21,7 +21,7 @@ const PhotoSwipeUiDefault = require('photoswipe/dist/photoswipe-ui-default');
       });
     }
   };
-
+  /*
   // Footer menu open in responsive
   Drupal.behaviors.footerResposive = {
     attach: function (context, settings) {
@@ -30,7 +30,7 @@ const PhotoSwipeUiDefault = require('photoswipe/dist/photoswipe-ui-default');
       });
     }
   };
-
+  */
   // Add current week in calendar
   Drupal.behaviors.currentWeek = {
     attach: function (context, settings) {
@@ -62,7 +62,7 @@ const PhotoSwipeUiDefault = require('photoswipe/dist/photoswipe-ui-default');
       });
     }
   };
-
+  /*
   // Open/close search
   Drupal.behaviors.openSearch = {
     attach: function (context, settings) {
@@ -97,7 +97,7 @@ const PhotoSwipeUiDefault = require('photoswipe/dist/photoswipe-ui-default');
       });
     }
   };
-
+  */
   // Language dropdown
   Drupal.behaviors.lang = {
     attach: function (context, settings) {
@@ -190,7 +190,7 @@ const PhotoSwipeUiDefault = require('photoswipe/dist/photoswipe-ui-default');
           }
         });
         // Open the language menu on tab focus, triggerred by click as well.
-        $(this).find('a').on('focusin', function(e) {
+        $(this).find('a').on('focusin', function (e) {
           // Do not open the language menu in case it is already open.
           // We have to do this extra check to support keyboard back tabbing.
           if (!$('.language .options').hasClass('is-open')) {
@@ -198,7 +198,7 @@ const PhotoSwipeUiDefault = require('photoswipe/dist/photoswipe-ui-default');
           }
         });
         // Close the language menu on focus out of the language items.
-        $(this).find('a').on('blur', function(e) {
+        $(this).find('a').on('blur', function (e) {
           if (!$(e.relatedTarget).hasClass('language-link')) {
             $('.language .options').toggleClass('is-open is-hidden');
           }

@@ -118,3 +118,19 @@
 		}
 	}
 }
+
+
+
+.slim{
+	.field--name-field-teaser-sub-title{
+		font-size: $font-size-h2;
+		font-weight: normal;
+	}
+}
+
+.field--name-field-topic, div[class*='content-type']{
+	color: $deGOV-primary;
+	font-size: $font-size-small;
+	font-weight: bold;
+	text-transform: uppercase;
+}

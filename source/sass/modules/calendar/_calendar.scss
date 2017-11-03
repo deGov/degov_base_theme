@@ -78,7 +78,7 @@
   color: $brand-secondary;
 	display: flex;
 	padding: 20px;
-	background: $degov-light;
+	background: $deGOV-light;
 	margin-top: $grid-gutter-width/-2;
 	@include smaller-than($screen-xs-max){
 		word-break: break-all;

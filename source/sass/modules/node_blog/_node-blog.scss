@@ -1,4 +1,8 @@
 .blog{
+  &.slim{
+    //max-height: 160px;
+    overflow: hidden;
+  }
   &__header{
     background-color: $brand-primary;
     padding-bottom: $grid-gutter-width/2;
@@ -25,9 +29,8 @@
 
 .region-sidebar-second .blog {
   .blog__teaser-content {
-    @include make-sm-column(12);
-    padding: $grid-gutter-width/2 0 0 0;
     max-height: none;
+    width: 100%;
 
   }
   &.preview,

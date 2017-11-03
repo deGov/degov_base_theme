@@ -1,4 +1,9 @@
-
+/*h1,h2, h3, h4, h5, h6, p{
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}*/
 // Reduce spacing below page header
 .page-header {
 	padding: $vertical-gutter-width/2 0;

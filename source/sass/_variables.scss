@@ -26,10 +26,10 @@ $fa-font-path:   "../fonts/font-awesome";
     font-style: normal;
 }
 
-$degov-primary: #233755; // dark_blue
-$degov-secondary: #3C506E; // blue
-$degov-gray: #d9dada; //grey
-$degov-light: #EAEFF6; // light blue
+$deGOV-primary: rgb(0, 68, 115); // dark_blue
+$deGOV-secondary: rgb(120, 131, 141); // blue
+$deGOV-gray: rgb(241, 242, 243); //grey
+$deGOV-light: #EAEFF6; // light blue
 
 
 //other colors
@@ -46,7 +46,7 @@ $flickr-blue: #0063dc;
 $flickr-pink: #ff0084;
 $vimeo-blue: #00b9e7;
 
-$background-grey: #c0c0c0;
+$background-grey: rgb(241, 242, 243);
 
 //
 // Variables
@@ -67,10 +67,10 @@ $gray-dark: lighten($gray-base, 20%);
 $gray: lighten($gray-base, 33.5%);
 $gray-light: #e3e3e3;
 $gray-lighter: #f5f5f5;
-$brand-primary: $degov-primary;
-$brand-secondary: $degov-secondary;
+$brand-primary: $deGOV-primary;
+$brand-secondary: $deGOV-secondary;
 $brand-success: $degov-green;
-$brand-info: $degov-gray;
+$brand-info: $deGOV-gray;
 $brand-warning: $degov-yellow;
 $brand-danger: $degov-red;
 

@@ -51,7 +51,7 @@
       text-shadow: none;
       user-select: none;
       touch-action: manipulation;
-      @include button-variant($color-white, $degov-secondary, transparent);
+      @include button-variant($color-white, $deGOV-secondary, transparent);
       &:last-child {
         margin-right: 0;
       }

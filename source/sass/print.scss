@@ -53,7 +53,7 @@
       padding-top: 0;
     }
     .header__title {
-      display: block;
+      display: block !important;
       padding-top: $padding-large-vertical;
       position: relative;
       height: auto;
@@ -207,6 +207,10 @@ body.print{
   }
   .header__title {
     padding: 0;
+  }
+  .media--preview, .media--preview__type-text,.media--preview__text-block{
+    background: transparent;
+    color: black;
   }
   .slideshow .slick-track .slick-slide .slide__text{
     color: $gray_base;

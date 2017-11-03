@@ -1,6 +1,6 @@
 # degov
 
-This is a starter kit for a theme for the deGov Drupal distribution. It extends the degov_base_theme.
+This is a starter kit for a theme for the deGov Drupal distribution. It extends the deGov base theme.
 
 
 It uses a watch system built on _gulp_ to run build and copy tasks and trigger livereloading.
@@ -32,10 +32,10 @@ $ npm install
 
 #### Common errors
 
-**Error:** `ReferenceError: Set is not defined (…)`  
+**Error:** `ReferenceError: Set is not defined (…)`
 **Solution:** You have a version of node which does not support the new Set object. To get that you need to update the installed node version. Change to the root of the theme and call `./tools/update-node.sh`
 
-**Error:** `Error: Missing binding (…) Node Sass could not find a binding for your current environment (…)`  
+**Error:** `Error: Missing binding (…) Node Sass could not find a binding for your current environment (…)`
 **Solution:** Your version of node has changed, this means you need an updated node-sass binary. You can get that by calling `npm rebuild node-sass`
 
 

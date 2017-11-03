@@ -13,6 +13,9 @@
   @include smaller-than($screen-sm-max) {
     display: none;
   }
+  @include smaller-than($screen-sm-min) {
+    display: block;
+  }
   .slick__pause,
   .slick__play {
     display: none;
@@ -102,7 +105,7 @@
   top: auto;
   left: auto;
   @include smaller-than($screen-sm-max) {
-    display: none !important;
+
   }
   &:before {
     font-family: fontawesome;
@@ -161,11 +164,20 @@
   a {
     text-decoration: underline;
     color: $brand-secondary;
+    @media(max-width: $screen-sm-max){
+      font-size: 0;
+    }
   }
   i.fa {
     font-size: $font-size-h2;
     margin-right: $padding-small-horizontal;
     vertical-align: middle;
+    @media(max-width: $screen-sm-max){
+      margin: 0;
+      width: 40px;
+      left: $grid-gutter-width/8;
+      position: relative;
+    }
   }
 }
 
@@ -174,6 +186,9 @@
   position: absolute;
   font-size: 12px;
   font-weight: bold;
+  @media(max-width: $screen-sm-max){
+    display: none;
+  }
 }
 
 // Slider specific styles
@@ -250,6 +265,16 @@
     margin: 0 $grid-gutter-width/2;
     height: 44px;
     background: rgba($brand-secondary,0.9);
+    @media(max-width: $screen-sm-min){
+      background: transparent;
+    }
+    .slick__play{
+      @media(max-width: $screen-sm-max){
+        &:before{
+          display: none;
+        }
+      }
+    }
     button {
       position: absolute;
       left: 95px;
@@ -278,6 +303,9 @@
       right: 129px;
       top: 0;
       left: auto;
+      @media(max-width: $screen-sm-max){
+        right: 54px;
+      }
     }
     .slick__counter {
       left: 160px;
@@ -306,7 +334,7 @@
 .slideshow-with-prev-next {
   .slides_prev_next {
     @include smaller-than($screen-sm-max) {
-      background-color: $degov-primary;
+      background-color: $deGOV-primary;
     }
     .slide {
       position: relative;
@@ -332,7 +360,7 @@
         margin: 0 auto;
         padding: 30px 150px;
         overflow: auto;
-        background-color: rgba($degov-primary, .8);
+        background-color: rgba($deGOV-primary, .8);
         color: $color-white;
         @include smaller-than($screen-md-max) {
           padding-right: 120px;

@@ -61,88 +61,81 @@
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Social media settings #}
 {% if social_media_settings %}
-  <div id="social-media-settings" class="social-media-settings modal fade" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <button type="button" class="modal-close pull-right modal-button btn btn-default" data-dismiss="modal">
-          <span>{{ 'Schließen'|trans }}</span>
-          <i class="fa fa-times"></i>
-        </button>
-        <h2 class="modal-title">{{ 'Social Media Settings'|trans }}</h2>
-      </div>
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="social-media-settings__text">
-            <div>
-              {% trans %}
-                <p>Wenn Sie diese Felder durch einen Klick aktivieren, werden Informationen an
-                <a href="http://www.facebook.com" target="_blank">Facebook</a>,
-                <a href="https://twitter.com/" target="_blank">Twitter</a>,
-                <a href="https://www.youtube.com/" target="_blank">Youtube</a>,
-                <a href="https://plus.google.com/" target="_blank">Google</a>,
-                <a href="https://de.pinterest.com/" target="_blank">Pinterest</a>,
-                <a href="https://www.flickr.com/" target="_blank">Flickr</a> oder
-                <a href="https://vimeo.com/" target="_blank">Vimeo</a>
-                übertragen und unter Umständen auch dort gespeichert.</p>
-                <p>Bitte beachten Sie unsere Hinweise und Informationen zum
-                <a href="/datenschutzhinweise" target="_blank"> Datenschutz </a> und zur <a href="/netiquette" target="_blank">Netiquette</a>, bevor Sie einzelne Soziale Medien aktivieren.</p>
-                <p>Datenfeeds von sozialen Netzwerken dauerhaft aktivieren und Datenübertragung zustimmen:</p>
-              {% endtrans %}
+    <div id="social-media-settings" class="social-media-settings modal fade" aria-labelledby="social-media-settings-modal-title" role="dialog" aria-describedby="social-media-settings-modal-description" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <button type="button" class="modal-close pull-right modal-button btn btn-default" data-dismiss="modal">
+                    <span>{{ 'Schließen'|trans }}</span>
+                    <i aria-hidden="true" class="fa fa-times"></i>
+                </button>
+                <h2 tabindex="-1" id="social-media-settings-modal-title" class="modal-title">{{ 'Social Media Settings'|trans }}</h2>
             </div>
-          </div>
-          <ul class="social-media-settings__settings-list">
-            <li><label><input class="js-social-media-source-all" type="checkbox" value="all">{{ 'Alle'|trans }}</label></li>
-          {% for key, name in social_media_sources %}
-            <li><label><input class="js-social-media-source" type="checkbox" value="{{ key }}">{{ name }}</label></li>
-          {% endfor %}
-          </ul>
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="social-media-settings-modal-description" class="social-media-settings__text">
+                        <div>
+                            {% trans %}
+                            <p>Wenn Sie diese Felder durch einen Klick aktivieren, werden Informationen an
+                                <a href="http://www.facebook.com" target="_blank">Facebook</a>,
+                                <a href="https://twitter.com/" target="_blank">Twitter</a>,
+                                <a href="https://www.youtube.com/" target="_blank">Youtube</a>,
+                                <a href="https://plus.google.com/" target="_blank">Google</a>,
+                                <a href="https://de.pinterest.com/" target="_blank">Pinterest</a>,
+                                <a href="https://www.flickr.com/" target="_blank">Flickr</a> oder
+                                <a href="https://vimeo.com/" target="_blank">Vimeo</a>
+                                übertragen und unter Umständen auch dort gespeichert.</p>
+                            <p>Bitte beachten Sie unsere Hinweise und Informationen zum
+                                <a href="/datenschutzhinweise" target="_blank"> Datenschutz </a> und zur <a href="/netiquette" target="_blank">Netiquette</a>, bevor Sie einzelne Soziale Medien aktivieren.</p>
+                            <p>Datenfeeds von sozialen Netzwerken dauerhaft aktivieren und Datenübertragung zustimmen:</p>
+                            {% endtrans %}
+                        </div>
+                    </div>
+                    <ul class="social-media-settings__settings-list">
+                        <li><label><input class="js-social-media-source-all" type="checkbox" value="all">{{ 'Alle'|trans }}</label></li>
+                        {% for key, name in social_media_sources %}
+                            <li><label><input class="js-social-media-source" type="checkbox" value="{{ key }}">{{ name }}</label></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="social-media-settings__cancel modal-button btn btn-default" data-dismiss="modal">
+                        <span>{{ 'Abbrechen'|trans }}</span>
+                        <i aria-hidden="true" class="fa fa-times"></i>
+                    </button>
+                    <button type="button" class="js-social-media-settings-save modal-button social-media-settings__save btn btn-default" data-dismiss="modal">
+                        <span>{{ 'Speichern'|trans }}</span>
+                        <i aria-hidden="true" class="fa fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="social-media-settings__cancel modal-button btn btn-default" data-dismiss="modal">
-            <span>{{ 'Abbrechen'|trans }}</span>
-            <i class="fa fa-times"></i>
-          </button>
-          <button type="button" class="js-social-media-settings-save modal-button social-media-settings__save btn btn-default" data-dismiss="modal">
-            <span>{{ 'Speichern'|trans }}</span>
-            <i class="fa fa-paper-plane"></i>
-          </button>
-        </div>
-      </div>
     </div>
-  </div>
 {% endif %}
 {# Navbar #}
 <div class="header-wrapper">
-  <header class="header {{ container }}">
-    <div class="row">
+    <header class="header {{ container }}">
+        <div class="row">
 
-    {# TODO: select the correct language for select the template #}
-    {# TODO: create template for other templates #}
+            {# TODO: select the correct language for select the template #}
+            {# TODO: create template for other templates #}
 
-      {% include 'header-intro.html.twig' %}
-      <div class="header__branding">
-          <a href="{{ url('<front>') }}">
-            <div class="col-md-6 header__title">
-                <span>WIR IN DEGOV</span>
+            {% include 'header-intro.html.twig' %}
+            <div class="header__branding">
+                {% if page.branding_region|render|striptags|trim %}
+                    {% block branding_region %}
+                        <div class="col-md-12 header__logo">
+                            {{ page.branding_region }}
+                        </div>
+                    {% endblock %}
+                {% endif %}
             </div>
-          </a>
-          <div class="col-xs-6 header__menu-icon">
-              <i class="fa fa-bars" aria-hidden="true"></i>
-              <span>{% trans %}Menü{% endtrans %}</span>
-          </div>
-          <div class="col-md-6 header__logo">
-              <div class="image">
-                  <a href="{{ url('<front>') }}"><img alt="{{ logo_alt }}" src="{{ base_path ~ directory }}/source/images/logo.png"></a>
-              </div>
-          </div>
-      </div>
-      {# please Vivek inlude your template here. like the next. #}
-      <div class="header__menu">
-        {{ page_header_menu }}
-      </div>
-      {# include 'header.html.twig' #}
-    </div>
-  </header>
+            {# please Vivek inlude your template here. like the next. #}
+            <div class="header__menu">
+                {{ page_header_menu }}
+            </div>
+            {# include 'header.html.twig' #}
+        </div>
+    </header>
 
 
 </div>
@@ -150,63 +143,63 @@
 
 {# Main #}
 {% block main %}
-  <div class="main-wrapper">
-    <div role="main" class="main-container {{ container }} js-quickedit-main-content">
-      <div class="row">
+    <div class="main-wrapper">
+        <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+            <div class="row">
 
-        {# Header Region #}
-        {% if page.header_region|render|striptags|trim %}
-          {% block header_region %}
-            <div class="col-sm-12" role="complementary">
-              {{ page.header_region }}
+                {# Header Region #}
+                {% if page.header_region|render|striptags|trim %}
+                    {% block header_region %}
+                        <div class="col-sm-12" role="complementary">
+                            {{ page.header_region }}
+                        </div>
+                    {% endblock %}
+                {% endif %}
+
+                {# Sidebar First #}
+                {% if page.sidebar_first|render|striptags|trim %}
+                    {% block sidebar_first %}
+                        <aside class="col-sm-3" role="complementary">
+                            {{ page.sidebar_first }}
+                        </aside>
+                    {% endblock %}
+                {% endif %}
+
+                {# Content #}
+                {%
+                set content_classes = [
+                page.sidebar_first|render|striptags|trim and page.sidebar_second|render|striptags|trim ? 'col-sm-6',
+                page.sidebar_first|render|striptags|trim and page.sidebar_second|render|striptags|trim is empty ? 'col-sm-9',
+                page.sidebar_second|render|striptags|trim and page.sidebar_first|render|striptags|trim is empty ? 'col-sm-9',
+                page.sidebar_first|render|striptags|trim is empty and page.sidebar_second|render|striptags|trim is empty ? 'col-sm-12'
+                ]
+                %}
+                <section{{ content_attributes.addClass(content_classes) }}>
+
+
+                    {# Content #}
+                    {% block content %}
+                        <a id="main-content"></a>
+                        {{ page.content }}
+                    {% endblock %}
+                </section>
+
+                {# Sidebar Second #}
+                {% if page.sidebar_second|render|striptags|trim %}
+                    {% block sidebar_second %}
+                        <aside class="col-sm-3" role="complementary">
+                            {{ page.sidebar_second }}
+                        </aside>
+                    {% endblock %}
+                {% endif %}
             </div>
-          {% endblock %}
-        {% endif %}
-
-        {# Sidebar First #}
-        {% if page.sidebar_first|render|striptags|trim %}
-          {% block sidebar_first %}
-            <aside class="col-sm-3" role="complementary">
-              {{ page.sidebar_first }}
-            </aside>
-          {% endblock %}
-        {% endif %}
-
-        {# Content #}
-        {%
-          set content_classes = [
-            page.sidebar_first|render|striptags|trim and page.sidebar_second|render|striptags|trim ? 'col-sm-6',
-            page.sidebar_first|render|striptags|trim and page.sidebar_second|render|striptags|trim is empty ? 'col-sm-9',
-            page.sidebar_second|render|striptags|trim and page.sidebar_first|render|striptags|trim is empty ? 'col-sm-9',
-            page.sidebar_first|render|striptags|trim is empty and page.sidebar_second|render|striptags|trim is empty ? 'col-sm-12'
-          ]
-        %}
-        <section{{ content_attributes.addClass(content_classes) }}>
-
-
-          {# Content #}
-          {% block content %}
-            <a id="main-content"></a>
-            {{ page.content }}
-          {% endblock %}
-        </section>
-
-        {# Sidebar Second #}
-        {% if page.sidebar_second|render|striptags|trim %}
-          {% block sidebar_second %}
-            <aside class="col-sm-3" role="complementary">
-              {{ page.sidebar_second }}
-            </aside>
-          {% endblock %}
-        {% endif %}
-      </div>
+        </div>
     </div>
-  </div>
 {% endblock %}
 
 
 {% block footer %}
-  {% include 'footer.html.twig' %}
+    {% include 'footer.html.twig' %}
 {% endblock %}
 
 

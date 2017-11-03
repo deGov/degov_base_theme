@@ -1,7 +1,7 @@
 .view-events {
   &__sidebar-left {
     border-right: 1px solid $brand-info;
-    background: $degov-secondary;
+    background: $deGOV-secondary;
     color: $color-white;
     padding-top: $vertical-gutter-width/2;
     padding-bottom: $vertical-gutter-width/2;
@@ -37,7 +37,7 @@
         float: left;
         padding: 7.5px;
         padding-left: 0;
-        color: $degov-secondary;
+        color: $deGOV-secondary;
         font-size: $font-size-h3;
         background: $color-white;
       }
@@ -79,7 +79,7 @@
   color: $brand-secondary;
 	display: flex;
 	padding: 20px;
-	background: $degov-light;
+	background: $deGOV-light;
 	margin: 0 $grid-gutter-width/-2;
 	@include smaller-than($screen-xs-max){
 		word-break: break-all;

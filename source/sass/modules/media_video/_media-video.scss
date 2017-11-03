@@ -55,8 +55,8 @@
   }
 }
 
-.media-video.view-mode-full,
-.media-video-upload.view-mode-full {
+.media-video.view-mode-full, .media-video.view-mode-default,
+.media-video-upload.view-mode-full, .media-video-upload.view-mode-default {
   .video__info__wrap,
   .video-upload__info__wrap {
     background: rgba($gray-dark, 0.7);
@@ -96,7 +96,7 @@
     color: $brand-secondary;
     clear: both;
     &__header {
-      background: $degov-light;
+      background: $deGOV-light;
       font-weight: bold;
       padding: $padding-large-vertical $grid-gutter-width/2;
       cursor: pointer;
@@ -134,7 +134,7 @@
       margin-bottom: $padding-large-vertical;
       &,
       a {
-        color: $degov-secondary;
+        color: $deGOV-secondary;
       }
     }
   }

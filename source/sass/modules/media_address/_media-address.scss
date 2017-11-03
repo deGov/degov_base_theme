@@ -1,11 +1,11 @@
 .address {
   font-size: $font-size-h6;
   &__headline {
-    color: $degov-secondary;
+    color: $deGOV-secondary;
     font-size: $font-size-h3;
-    line-height: $line-height-base;
-    margin-bottom: $padding-base-vertical;
-    margin-top: $padding-base-vertical*2;
+    line-height: $font-size-h3;
+    margin-bottom: $padding-base-vertical*2;
+    margin-top: 0;
   }
   &__fax,
   &__phone {

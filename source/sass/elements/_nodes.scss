@@ -1,5 +1,11 @@
 // Styles for nodes
-
+.small-image{
+  .teaser-content{
+    a{
+      font-weight: normal;
+    }
+  }
+}
 article.long-text {
   border-bottom: 1px solid #dde6f0;
   .teaser-content{
@@ -17,6 +23,12 @@ article.long-text {
       &:after{
         @include triangle-right($color-white);
         top: 15px;
+        @media(max-width: $screen-sm-max){
+          top: auto;
+          bottom: -9px;
+          transform: rotate(270deg);
+          left: 16px;
+        }
       }
     }
   }
@@ -26,6 +38,12 @@ article.long-text {
         @include triangle-left($color-white);
         top: 15px;
         right: 0px;
+        @media(max-width: $screen-sm-max){
+          top: auto;
+          bottom: -9px;
+          transform: rotate(90deg);
+          left: 16px;
+        }
       }
     }
   }
@@ -51,6 +69,12 @@ article.slim {
         @include triangle-left($color-white);
         top: 15px;
         right: 0;
+        @media(max-width: $screen-sm-max){
+          top: auto;
+          bottom: -9px;
+          transform: rotate(90deg);
+          left: 16px;
+        }
       }
     }
   }
@@ -60,6 +84,12 @@ article.slim {
       &:after{
         @include triangle-right($color-white);
         top: 15px;
+        @media(max-width: $screen-sm-max){
+          top: auto;
+          bottom: -9px;
+          transform: rotate(270deg);
+          left: 16px;
+        }
       }
     }
   }
@@ -89,14 +119,21 @@ article.small-image{
   }
 
 }
-
+article.slim{
+  &:nth-child(3), &:nth-child(4){
+    text-align: right;
+  }
+}
 article.preview,
 article.long-text,
 article.small-image,
 article.slim{
   .teaser-title h3 {
     font-size: $font-size-h2;
-    font-weight: bold;
+    font-weight: normal;
+    span{
+      font-weight: bold;
+    }
   }
   .blog__teaser-text {
     font-size: $font-size-h6;

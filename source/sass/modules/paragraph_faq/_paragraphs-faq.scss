@@ -30,7 +30,7 @@
 			display: inline-block;
 			 width: 100%;
 			height: 3px;
-			border: 1px solid $degov-gray;
+			border: 1px solid $deGOV-gray;
 			position: relative;
 			margin: 0px -1*($padding-small-vertical*4);
 			width: 1280px;
@@ -43,7 +43,7 @@
 		}
 		&:last-child{
 			&:after{
-				border: 0px solid $degov-gray;
+				border: 0px solid $deGOV-gray;
 			}
 		}
 	}

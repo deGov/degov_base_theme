@@ -45,6 +45,9 @@
   .normal-page__teaser-text {
     font-size: $font-size-h6;
     font-weight: normal;
+    a{
+      font-weight: normal;
+    }
   }
   .normal-page__teaser-title {
     h3 {

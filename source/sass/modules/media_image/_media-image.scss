@@ -85,7 +85,7 @@
     }
   }
   .image__extra-info {
-    background: $degov-secondary;
+    background: $deGOV-secondary;
     padding: $grid-gutter-width/2;
     font-size: $font-size-h4;
     .file {
@@ -94,7 +94,7 @@
       padding: $padding-large-horizontal/2;
       &,
       a {
-        color: $degov-secondary;
+        color: $deGOV-secondary;
       }
     }
   }
@@ -157,5 +157,12 @@
     display: block;
     font-size: $font-size-small;
     font-weight: bold;
+  }
+}
+
+.slideshow__slides{
+  .image{
+    max-width: 100%;
+    margin: 0;
   }
 }

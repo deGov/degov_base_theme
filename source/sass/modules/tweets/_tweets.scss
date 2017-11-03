@@ -16,10 +16,10 @@
     max-height: 98px;
   }
   &.odd {
-    border-right: 1px solid $degov-light;
+    border-right: 1px solid $deGOV-light;
   }
   &.even {
-    border-left: 1px solid $degov-light;
+    border-left: 1px solid $deGOV-light;
     margin-left: -1px;
   }
   &__follow {
@@ -61,6 +61,9 @@
   &__name-handle,
   &__text {
     margin-left: $grid-gutter-width*1.5;
+    a{
+      font-weight: normal;
+    }
   }
   &__name,
   &__handle {

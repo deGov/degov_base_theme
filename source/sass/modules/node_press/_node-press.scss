@@ -1,4 +1,8 @@
 .press{
+  &.slim{
+    max-height:119px;
+    overflow: hidden;
+  }
   .date{
     background: $brand-primary;
     color: $color-white;
@@ -35,8 +39,12 @@
     font-weight: bold;
     line-height: $font-size-h3;
   }
-  @media(max-width:$screen-sm) {
-    .press__teaser-text {
+
+  .press__teaser-text {
+    a{
+      font-weight: normal;
+    }
+    @media(max-width:$screen-sm) {
       padding: $grid-gutter-width/2 0 0 0;
     }
   }
@@ -58,6 +66,7 @@
     color: $text-color;
     font-size: $font-size-small;
     font-family: $font-family-sans-serif;
+    margin-bottom: $grid-gutter-width/6;
     time {
       font-weight: normal;
     }
@@ -67,6 +76,7 @@
     font-size: $font-size-h6;
     line-height: 1.1;
     font-family: $font-family-sans-serif;
+    margin-bottom: $grid-gutter-width/6;
     font-weight: bold;
     &:hover,
     &:focus {

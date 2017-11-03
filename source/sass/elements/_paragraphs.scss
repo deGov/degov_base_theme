@@ -17,11 +17,8 @@ div[class*="__header-paragraphs"] .paragraph a {
   display: flex;
   margin: 0 -20px;
   padding: 20px;
-  background: $degov-light;
+  background: $deGOV-light;
 
-  @include smaller-than($screen-xs-max){
-    word-break: break-all;
-  }
   &.paragraph__header-right {
     display: inline-block;
     width: 100%;
@@ -77,7 +74,7 @@ div[class*="__header-paragraphs"] .paragraph a {
   &__text {
     background: $brand-primary;
     color: $color-white;
-    padding: $padding-large-vertical $grid-gutter-width/2;
+    padding: $grid-gutter-width/2;
     margin: 0 $grid-gutter-width/-2;
     position: relative;
     h1, h2, h3, h4, h5, h6 {
@@ -117,5 +114,11 @@ div[class*="__header-paragraphs"] .paragraph a {
         display: none;
       }
     }
+  }
+}
+
+.not-header{
+  article{
+    padding-top: 0;
   }
 }
