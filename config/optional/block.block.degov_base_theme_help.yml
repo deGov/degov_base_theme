@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - degov_base_theme
+  enforced:
+    theme:
+      - degov_base_theme
+id: degov_base_theme_help
+theme: degov_base_theme
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Hilfe
+  provider: help
+  label_display: '0'
+visibility: {  }

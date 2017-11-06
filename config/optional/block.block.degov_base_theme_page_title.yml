@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  theme:
+    - degov_base_theme
+  enforced:
+    theme:
+      - degov_base_theme
+id: degov_base_theme_page_title
+theme: degov_base_theme
+region: header_region
+weight: -4
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Seitentitel
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

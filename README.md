@@ -1,2 +1,3 @@
-# degov_base_theme
-Base theme for deGov installations derived from Bootstrap.
+# README #
+
+This is the base theme the deGov Drupal distribution
