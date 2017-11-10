@@ -19,11 +19,12 @@
                     {% else %}
                          <li class="first"><a href="/user/login" title="Anmelden / Registrieren" class="login">{% trans %}Anmelden / Registrieren{% endtrans %}</a></li>
                     {% endif %}
-                    {% if social_media_settings %}
-                    <li><a href="/servicecenter/kontakt" title="Kontakt" class="kontakt">Kontakt</a></li>
-                    <li class="last"><a role="button" href="#" class="js-social-media-settings-open social-media-settings--menu-item hidden">{{ 'Social Media Settings'|trans }}<i class="fa fa-cog" aria-hidden="true"></i></a></li>
+                    {% set has_top_navigation = page.top_navigation|render|striptags|trim is not empty %}
+                    {% if has_top_navigation %}
+                      <li><a href="/servicecenter/kontakt" title="Kontakt" class="kontakt">Kontakt</a></li>
+                      {{ page.top_navigation }}
                     {% else %}
-                    <li class="last"><a href="/servicecenter/kontakt" title="Kontakt" class="kontakt">Kontakt</a></li>
+                      <li class="last"><a href="/servicecenter/kontakt" title="Kontakt" class="kontakt">Kontakt</a></li>
                     {% endif %}
                 </ul>
             </nav>
