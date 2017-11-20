@@ -22,6 +22,7 @@ $tag-font-size: 12px;
     font-size: $tag-font-size;
     color: $color-white;
     font-weight: normal;
+    padding-left: $padding-xs-horizontal;
   }
 }
 
@@ -40,7 +41,6 @@ $tag-font-size: 12px;
     a {
       display: inline-block;
       color: $brand-primary;
-      padding-right: $padding-xs-horizontal;
     }
   }
 }
@@ -72,6 +72,14 @@ $tag-font-size: 12px;
   }
   &:last-child{
     &:after{
+      content: '';
+    }
+  }
+}
+.media.view-mode-preview .tags > a {
+  &:first-child {
+    padding-left: 0;
+    &:after {
       content: '';
     }
   }
