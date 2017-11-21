@@ -61,7 +61,7 @@
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Tags are stripped from the sidebars, because empty views, or media references could contain empty content wrappers #}
 {# and if this happens we do not want to show an empty sidebar. We though allow some tags that should never be stripped #}
-{% set allowedTags = '<embed><iframe><article>' %}
+{% set allowedTags = '<embed><iframe><article><drupal-render-placeholder>' %}
 {# Navbar #}
 <div class="header-wrapper">
     <header class="header {{ container }}">
